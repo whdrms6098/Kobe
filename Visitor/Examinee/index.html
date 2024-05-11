@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>受験生の方｜神戸女子大学</title>
+
+    <link rel="icon" href="../../images/favicon.ico">
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/visitor.css">
+
+    <script defer src="../../js/common.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <a href="/">
+            <img src="../../images/logo.png" alt="神戸女子大学" />
+        </a>
+
+        <div class="sub-menu">
+            <div class="sub-menu-subject">
+                <ul class="subject-menu">
+                    <li>
+                        <a href="/Visitor/Examinee/">受験生の方</a>
+                    </li>
+                    <li>
+                        <a href="/Visitor/Student/">在学生の方</a>
+                    </li>
+                    <li>
+                        <a href="/Visitor/Graduated/">卒業生の方</a>
+                    </li>
+                    <li>
+                        <a href="/Visitor/Parent/">保護者の方</a>
+                    </li>
+                    <li>
+                        <a href="/Visitor/Public/">一般・企業の方</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">ご支援をお考えの方</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sub-menu-sp">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">資料請求</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">お問い合わせ</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">アクセス</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-subject-open">
+            <img src="../../images/subject-menu.svg" alt="訪問者別メニュー">
+            <p>訪問者別</p>
+        </div>
+
+        <div class="menu-subject-close">
+            <img src="../../images/menu-close.svg" alt="close">
+        </div>
+
+        <div class="menu-open">
+            <img src="../../images/btn_menu.png" alt="Menu">
+        </div>
+    </nav>
+
+
+    <footer>
+        <div id="to-top"></div>
+        <div class="inner">
+            <div class="related">
+                <h3>Related Organization / <span>学園案内</span></h3>
+
+                <div class="related-wrap">
+                    <div class="related-banner">
+                        <a href="javascript:void(0)">
+                            <img src="../../images/ro_bnr01.jpg" alt="学校法人行吉学園" />
+                        </a>
+                    </div>
+
+                    <div class="related-banner">
+                        <a href="javascript:void(0)">
+                            <img src="../../images/ro_bnr02.jpg" alt="神戸女子短期大学" />
+                        </a>
+                    </div>
+
+                    <div class="related-banner">
+                        <a href="javascript:void(0)">
+                            <img src="../../images/ro_bnr03.jpg" alt="神戸女子大学付属高倉台幼稚園" />
+                        </a>
+                    </div>
+
+                    <div class="related-banner">
+                        <a href="javascript:void(0)">
+                            <img src="../../images/ro_bnr04.jpg" alt="社会福祉法人神女きずな会 神女中山手保育園" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="f-content">
+                <div class="campus">
+                    <h3>Campus / <span>キャンパス</span></h3>
+
+                    <div class="campus-title">
+                        <h6>須磨キャンパス</h6>
+                    </div>
+                    <div class="campus-description">
+                        <p>〒654-8585 神戸市須磨区東須磨青山2-1</p>
+                        <p>TEL：078-731-4416</p>
+                    </div>
+
+                    <div class="campus-title">
+                        <h6>ポートアイランドキャンパス</h6>
+                    </div>
+                    <div class="campus-description">
+                        <p>〒650-0046 神戸市中央区港島中町4-7-2</p>
+                        <p>TEL：078-303-4811</p>
+                    </div>
+
+                    <div class="campus-title">
+                        <h6>三宮キャンパス</h6>
+                    </div>
+                    <div class="campus-description">
+                        <p>〒650-0004 神戸市中央区中山手通2-23-1</p>
+                        <p>TEL：078-231-1001</p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <h3>Information / <span>インフォメーション</span></h3>
+                    <div class="f-menu">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">情報公表</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">交通アクセス</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">お問い合わせ
+                                    <span>
+                                        <img src="../../images/icon_blank.png" alt="blank" />
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">資料請求
+                                    <span>
+                                        <img src="../../images/icon_blank.png" alt="blank" />
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">サイトマップ</a>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">サイトポリシー
+                                    <span>
+                                        <img src="../../images/icon_blank.png" alt="blank" />
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">個人情報の取り扱い
+                                    <span>
+                                        <img src="../../images/icon_blank.png" alt="blank" />
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">個人情報保護への取り組み
+                                    <span>
+                                        <img src="../../images/icon_blank.png" alt="blank" />
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">教職員募集
+                                    <span>
+                                        <img src="../../images/icon_blank.png" alt="blank" />
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Outline
+                                    <span>
+                                        <img src="../../images/icon_blank.png" alt="blank" />
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="search">
+                    <form>
+                        <input type="text">
+                        <input type="submit" value="検索">
+                    </form>
+                    <button class="btn_form">資料請求</button>
+                </div>
+            </div>
+
+            <div class="f-logo">
+                <a href="javascript:void(0)">
+                    <img src="../../images/logo.png" alt="神戸女子大学">
+                </a>
+                <p>© YUKIYOSHI INSTITUTE.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="side-menu">
+        <div class="side-menu-container">
+
+            <div class="side-menu-close">
+                <button>Close</button>
+            </div>
+
+            <div class="inner">
+                <div class="search">
+                    <form>
+                        <input type="text">
+                        <input type="submit" value="検索">
+                    </form>
+                </div>
+
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="/Visitor/Examinee/">受験生の方</a>
+                        </li>
+                        <li>
+                            <a href="/Visitor/Student/">在学生の方</a>
+                        </li>
+                        <li>
+                            <a href="/Visitor/Graduated/">卒業生の方</a>
+                        </li>
+                        <li>
+                            <a href="/Visitor/Parent/">保護者の方</a>
+                        </li>
+                        <li>
+                            <a href="/Visitor/Public/">一般・企業の方</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                ご支援を<br />
+                                お考えのみなさまへ
+                                <span>
+                                    <img src="../../images/icon_blank.png" alt="blank" />
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                トップページ<br />
+                                <em>Toppage</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                大学案内<br />
+                                <em>Outline</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                学部・大学院<br />
+                                <em>Outline</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                入試情報<br />
+                                <em>Examination</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">学納金</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                キャリア・教職<br />
+                                <em>Career</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                国際交流<br />
+                                <em>International Exchange</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                学生生活<br />
+                                <em>Campus Life</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                地域連携<br />
+                                <em>Community Cooperation</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                図書館<br />
+                                <em>Library</em>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="f-menu">
+                    <ul>
+                        <li><a href="javascript:void(0)">Important News</a></li>
+                        <li><a href="javascript:void(0)">News</a></li>
+                        <li><a href="javascript:void(0)">Events</a></li>
+                        <li><a href="javascript:void(0)">情報公表</a></li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                教員・研究情報
+                                <span>
+                                    <img src="../../images/icon_blank.png" alt="blank" />
+                                </span>
+                            </a>
+                        </li>
+                        <li><a href="javascript:void(0)">交通アクセス</a></li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                お問い合わせ
+                                <span>
+                                    <img src="../../images/icon_blank.png" alt="blank" />
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                資料請求
+                                <span>
+                                    <img src="../../images/icon_blank.png" alt="blank" />
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="javascript:void(0)">サイトマップ</a></li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                サイトポリシー
+                                <span>
+                                    <img src="../../images/icon_blank.png" alt="blank" />
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                個人情報の取り扱い
+                                <span>
+                                    <img src="../../images/icon_blank.png" alt="blank" />
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                個人情報保護への取り組み
+                                <span>
+                                    <img src="../../images/icon_blank.png" alt="blank" />
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                教職員募集
+                                <span>
+                                    <img src="../../images/icon_blank.png" alt="blank" />
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                Outline
+                                <span>
+                                    <img src="../../images/icon_blank.png" alt="blank" />
+                                </span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
