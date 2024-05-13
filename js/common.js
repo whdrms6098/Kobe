@@ -1,3 +1,14 @@
+const images = document.querySelectorAll(".header-bg img");
+let currentIndex = 0;
+
+function headerBg() {
+  images[currentIndex].classList.remove("active");
+  currentIndex = (currentIndex + 1) % images.length;
+  images[currentIndex].classList.add("active");
+}
+
+setInterval(headerBg, 5000);
+
 $(".menu-open").click(function (e) {
   e.stopPropagation();
   $(".side-menu").fadeIn("fast");
