@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>保護者の方｜神戸女子大学</title>
+    <title>受験生の方｜神戸女子大学</title>
 
     <link rel="icon" href="../../images/favicon.ico">
 
@@ -15,7 +15,6 @@
 
     <!-- gsap -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
 
     <!-- jquery -->
@@ -28,6 +27,7 @@
     <link rel="stylesheet" href="../../css/visitor.css">
 
     <script defer src="../../js/common.js"></script>
+    <script defer src="../../js/visitor.js"></script>
 
 </head>
 
@@ -37,47 +37,6 @@
             <img src="../../images/logo.png" alt="神戸女子大学" />
         </a>
 
-        <div class="sub-menu">
-            <div class="sub-menu-subject">
-                <ul class="subject-menu">
-                    <li>
-                        <a href="/Visitor/Examinee/">受験生の方</a>
-                    </li>
-                    <li>
-                        <a href="/Visitor/Student/">在学生の方</a>
-                    </li>
-                    <li>
-                        <a href="/Visitor/Graduated/">卒業生の方</a>
-                    </li>
-                    <li>
-                        <a href="/Visitor/Parent/">保護者の方</a>
-                    </li>
-                    <li>
-                        <a href="/Visitor/Public/">一般・企業の方</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">ご支援をお考えの方</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="sub-menu-sp">
-                <ul>
-                    <li>
-                        <a href="javascript:void(0)">資料請求</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">お問い合わせ</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">アクセス</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">English</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <div class="menu-subject-open">
             <img src="../../images/subject-menu.svg" alt="訪問者別メニュー">
             <p>訪問者別</p>
@@ -92,6 +51,481 @@
         </div>
     </nav>
 
+    <header>
+        <div class="header-bg">
+            <img src="../../images/main01.jpg" alt="Bg" class="active" />
+            <img src="../../images/main02.jpg" alt="Bg" />
+            <img src="../../images/main03.jpg" alt="Bg" />
+            <img src="../../images/main04.jpg" alt="Bg" />
+        </div>
+
+        <div class="inner">
+            <div class="header-title">
+                <h1>Visitor</h1>
+                <p>“訪問者別メニュー”</p>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">大学案内</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">学部・大学院</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">入試情報</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">キャリア・教職</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">国際交流</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">学生生活</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">図書館</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">地域連携</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="info">
+            <div class="inner">
+                <div class="top-cpath">
+                    <ul>
+                        <li>
+                            <a href="../../">トップページ</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">訪問者別メニュー</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">受験生の方</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="info-wrap">
+                    <div class="info-list">
+                        <div class="info-list-title">
+                            <h1>受験生の方</h1>
+                        </div>
+
+                        <div class="info-page-menu">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">入試情報</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">大学案内</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">キャリア・教職</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">国際交流</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">地域連携</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">学部・大学院</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">学生生活</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">附属機関・関連団体</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="info-list-item" id="list-item1">
+                            <div class="list-item-title">
+                                <h2>入試情報</h2>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">入試情報TOP</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">受験生向けサイト
+                                        <span>
+                                            <img src="../../images/icon_blank.png" alt="blank">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【大学院】入試情報</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【編入】入試情報</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">奨学金制度</a>
+                                </li>
+                            </ul>
+
+                            <div class="page-top-btn">
+                                <button>
+                                    <img src="../../images/arrow_pt.png" alt="arriw">
+                                    ページトップ
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="info-list-item" id="list-item2">
+                            <div class="list-item-title">
+                                <h2>大学案内</h2>
+                            </div>
+
+                            <div class="list-item-title-sub">
+                                <p>神戸女子大学の組織図や行事がわかります。</p>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">大学案内TOP</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">学長挨拶</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">大学組織図</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">イベントカレンダー</a>
+                                </li>
+                            </ul>
+
+                            <div class="page-top-btn">
+                                <button>
+                                    <img src="../../images/arrow_pt.png" alt="arriw">
+                                    ページトップ
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="info-list-item" id="list-item3">
+                            <div class="list-item-title">
+                                <h2>キャリア・教職</h2>
+                            </div>
+
+                            <div class="list-item-title-sub">
+                                <p>就職や資格・教員免許取得までの支援内容</p>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">キャリア・教職TOP</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">就職支援</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">教職支援</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">資格支援</a>
+                                </li>
+                                </li>
+                            </ul>
+
+                            <div class="page-top-btn">
+                                <button>
+                                    <img src="../../images/arrow_pt.png" alt="arriw">
+                                    ページトップ
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="info-list-item" id="list-item4">
+                            <div class="list-item-title">
+                                <h2>国際交流</h2>
+                            </div>
+
+                            <div class="list-item-title-sub">
+                                <p>海外での語学研修や留学について国別でご紹介</p>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">国際交流TOP</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">海外提携校</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">交通アクセス</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">サイトマップ</a>
+                                </li>
+                            </ul>
+
+                            <div class="page-top-btn">
+                                <button>
+                                    <img src="../../images/arrow_pt.png" alt="arriw">
+                                    ページトップ
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="info-list-item" id="list-item5">
+                            <div class="list-item-title">
+                                <h2>地域連携</h2>
+                            </div>
+
+                            <div class="list-item-title-sub">
+                                <p>学生・教員が取り組んでいる地域の方と連携した活動</p>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">地域連携TOP</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">地域貢献活動</a>
+                                </li>
+                            </ul>
+
+                            <div class="page-top-btn">
+                                <button>
+                                    <img src="../../images/arrow_pt.png" alt="arriw">
+                                    ページトップ
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="info-list-item" id="list-item6">
+                            <div class="list-item-title">
+                                <h2>学部・大学院</h2>
+                            </div>
+
+                            <div class="list-item-title-sub">
+                                <p>学部から進学後の専攻科・大学院までご紹介</p>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">【文学部】日本語日本文学科</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【文学部】英語英米文学科</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【文学部】国際教養学科</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【文学部】史学科</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【文学部】教育学科</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【家政学部】家政学科</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【家政学部】管理栄養士養成課程</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【健康福祉学部】社会福祉学科</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【健康福祉学部】健康スポーツ栄養学科</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【看護学部】看護学科</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【心理学部】心理学科</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【大学院】家政学研究科</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【大学院】文学研究科</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【大学院】健康栄養学研究科</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">【大学院】看護学研究科</a>
+                                </li>
+                            </ul>
+
+                            <div class="page-top-btn">
+                                <button>
+                                    <img src="../../images/arrow_pt.png" alt="arriw">
+                                    ページトップ
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="info-list-item" id="list-item7">
+                            <div class="list-item-title">
+                                <h2>学生生活</h2>
+                            </div>
+
+                            <div class="list-item-title-sub">
+                                <p>大学生活でのイベントは盛りだくさん！</p>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">学生生活TOP</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">キャンパス・施設紹介</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">神女イベント</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">クラブ活動</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">学生寮・下宿</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">奨学金制度</a>
+                                </li>
+                            </ul>
+
+                            <div class="page-top-btn">
+                                <button>
+                                    <img src="../../images/arrow_pt.png" alt="arriw">
+                                    ページトップ
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="info-list-item" id="list-item8">
+                            <div class="list-item-title">
+                                <h2>学生生活</h2>
+                            </div>
+
+                            <div class="list-item-title-sub">
+                                <p>大学生活でのイベントは盛りだくさん！</p>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">学生生活TOP</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">キャンパス・施設紹介</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">神女イベント</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">クラブ活動</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">学生寮・下宿</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">奨学金制度</a>
+                                </li>
+                            </ul>
+
+                            <div class="page-top-btn">
+                                <button>
+                                    <img src="../../images/arrow_pt.png" alt="arriw">
+                                    ページトップ
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="info-list-item" id="list-item9">
+                            <div class="list-item-title">
+                                <h2>附属機関・関連団体</h2>
+                            </div>
+
+                            <div class="list-item-title-sub">
+                                <p>多数の支援施設が整っています</p>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">図書館</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">キャリアサポートセンター</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">教職支援センター</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">学生相談室</a>
+                                </li>
+                            </ul>
+
+                            <div class="page-top-btn">
+                                <button>
+                                    <img src="../../images/arrow_pt.png" alt="arriw">
+                                    ページトップ
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="visitor-menu">
+                        <div class="visitor-menu-title">
+                            <h3>その他</h3>
+                        </div>
+                        <div class="visitor-menu-list">
+                            <h5>訪問者別メニュー</h5>
+                            <ul>
+                                <li>
+                                    <a href="../Examinee/">受験生の方</a>
+                                </li>
+                                <li>
+                                    <a href="../Student/">在学生の方</a>
+                                </li>
+                                <li>
+                                    <a href="../Graduated/">卒業生の方</a>
+                                </li>
+                                <li class="active">
+                                    <a href="../Parent/">保護者の方</a>
+                                </li>
+                                <li>
+                                    <a href="../Public/">一般・企業の方</a>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">交通アクセス</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">サイトマップ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div id="to-top"></div>

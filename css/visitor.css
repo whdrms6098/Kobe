@@ -1,5 +1,6 @@
 header {
     width: 100%;
+    padding: 75px 0;
 }
 
 header .header-bg {
@@ -29,7 +30,6 @@ header .header-bg img.active {
 
 header .header-title {
     height: 265px;
-    margin: 76px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,7 +176,7 @@ header .menu ul li:hover a::after {
 .info .info-wrap .info-list .info-page-menu {
     width: 100%;
     padding: 25px 0 25px 25px;
-    background-color: var(--color-light-pink);
+    background-color: var(--color-white-pink);
 }
 
 .info .info-wrap .info-list .info-page-menu ul {
@@ -291,6 +291,10 @@ header .menu ul li:hover a::after {
     font-size: 14px;
 }
 
+.info .info-wrap .visitor-menu .visitor-menu-list ul li.active {
+    color: var(--color-red);
+}
+
 .info .info-wrap .visitor-menu .visitor-menu-list ul:last-child {
     padding-top: 10px;
 }
@@ -324,8 +328,88 @@ header .menu ul li:hover a::after {
         display: none;
     }
 
+    header {
+        height: 50vw;
+        position: relative;
+        padding: 0;
+    }
+
+    header .header-bg {
+        height: 100%;
+    }
+
+    header .inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .header-title h1 {
+        font-size: 35px;
+    }
+
+    header .header-title p {
+        font-size: 18px;
+    }
+
     header .menu {
         display: none;
+    }
+
+    .info {
+        padding-top: 0;
+    }
+
+    .info .inner {
+        width: 100%;
+        background-size: auto 10px;
+    }
+
+    .info .inner::before {
+        border-top: 3px solid var(--color-red);
+    }
+
+    .info .top-cpath {
+        display: none;
+    }
+
+    .info .info-wrap .info-list {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .info .info-wrap .info-list .info-list-title {
+        background-size: auto 6px;
+    }
+
+    .info .info-wrap .info-list .info-list-title h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .info .info-wrap .info-list .info-page-menu {
+        padding: 50px;
+    }
+
+    .info .info-wrap .info-list .info-page-menu ul {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .info .info-wrap .info-list .info-list-item .list-item-title {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .info .info-wrap .info-list .info-list-item .list-item-title h2 {
+        max-width: none;
+        font-size: 16px;
+        display: inline-block;
+        border-bottom: 3px solid var(--color-red);
+    }
+
+    .info .info-wrap .info-list .info-list-item .list-item-title-sub {
+        padding: 15px 0 20px
     }
 
     .info .info-wrap .visitor-menu {
