@@ -838,8 +838,12 @@ footer .f-logo p {
         padding-bottom: 90px;
     }
 
+    footer .info {
+        padding: 0;
+    }
+
     footer h3 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     footer h3 span {
@@ -863,7 +867,7 @@ footer .f-logo p {
     }
 
     footer h3 span {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     footer .info h3 {

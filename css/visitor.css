@@ -182,7 +182,7 @@ header .menu ul li:hover a::after {
 .info .info-wrap .info-list .info-page-menu ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     row-gap: 20px;
 }
 
@@ -211,7 +211,7 @@ header .menu ul li:hover a::after {
 
 
 .info .info-wrap .info-list .info-list-item .list-item-title h2 {
-    max-width: 200px;
+    max-width: 260px;
     font-size: 20px;
     font-weight: bold;
     border-bottom: 5px solid var(--color-red);
@@ -223,7 +223,7 @@ header .menu ul li:hover a::after {
 }
 
 .info .info-wrap .info-list .info-list-item .list-item-title-sub p {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .info .info-wrap .info-list .info-list-item ul li {
@@ -237,8 +237,86 @@ header .menu ul li:hover a::after {
     background-size: auto 12px;
 }
 
+.info .info-wrap .info-list .info-list-item ul li a span {
+    position: relative;
+}
+
+.info .info-wrap .info-list .info-list-item ul li a span img {
+    position: absolute;
+    top: 0;
+    right: -13px;
+}
+
 .info .info-wrap .info-list .info-list-item ul li a:hover {
     color: var(--color-red)
+}
+
+.info .info-wrap .info-list .info-list-item ul ol li {
+    background: none;
+    padding: 10px 0;
+    cursor: text;
+}
+
+.info .info-wrap .info-list .info-list-item ul ol li:hover {
+    color: inherit
+}
+
+.info .info-wrap .info-list .info-list-item ul ol li span {
+    color: var(--color-red);
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+.info .info-wrap .info-list .info-list-item .list-item-pdf {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info .info-wrap .info-list .info-list-item .list-item-pdf a {
+    text-decoration: underline;
+    font-size: 14px;
+    padding: 20px 30px 20px 0;
+    background: url("../images/icon_pdf.png") right center no-repeat;
+}
+
+.info .info-wrap .info-list .info-list-item .info-img {
+    padding: 40px 0;
+}
+
+.info .info-wrap .info-list .info-list-item .info-img img {
+    width: 100%;
+}
+
+.info .info-wrap .info-list .info-list-item .info-img-description {
+    padding: 30px 0;
+}
+
+.info .info-wrap .info-list .info-list-item .info-img-description .info-img-title {
+    width: 100%;
+    border-bottom: 1px dotted var(--color-light-gray);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.info .info-wrap .info-list .info-list-item .info-img-description .info-img-title h5 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.info .info-wrap .info-list .info-list-item .info-img-description .info-img-text {
+    padding: 30px 0;
+}
+
+.info .info-wrap .info-list .info-list-item .info-img-description .info-img-text h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-red);
+    padding-bottom: 10px;
+}
+
+.info .info-wrap .info-list .info-list-item .info-img-description .info-img-text p {
+    font-size: 14px;
 }
 
 .info .info-wrap .info-list .info-list-item .page-top-btn {
@@ -323,13 +401,137 @@ header .menu ul li:hover a::after {
     padding: 20px 0;
 }
 
+.info .info-wrap .info-list .news-content {
+    padding: 40px 0 60px;
+}
+
+.info .info-wrap .info-list .news-content div>h3 {
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.info .info-wrap .info-list .news-content div>h3 span {
+    font-size: 17px;
+    font-style: normal;
+}
+
+
+.info .info-wrap .info-list .news-notice-list {
+    border-top: 2px solid var(--color-black);
+    margin-top: 30px;
+}
+
+.info .info-wrap .info-list .news-notice {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--color-light-gray);
+    cursor: pointer;
+}
+
+.info .info-wrap .info-list .news-notice:hover .news-notice-title p {
+    text-decoration: underline;
+}
+
+.info .info-wrap .info-list .news-notice .news-notice-date {
+    text-align: center;
+}
+
+.info .info-wrap .info-list .news-notice .news-notice-date p {
+    font-size: 13px;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.info .info-wrap .info-list .news-notice .news-notice-date span {
+    padding: 5px 10px;
+    color: var(--color-white);
+    background-color: var(--color-pink);
+    font-size: 13px;
+    display: block;
+}
+
+.info .info-wrap .info-list .news-notice .news-notice-title p {
+    font-size: 14px;
+}
+
+.info .info-wrap .site-map {
+    width: 100%;
+}
+
+.info .info-wrap .site-map .site-map-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info .info-wrap .site-map .site-map-title {
+    border-top: 3px solid var(--color-red);
+    border-bottom: 3px solid var(--color-red);
+    padding: 15px 5px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.info .info-wrap .site-map .site-map-title h3 {
+    color: var(--color-red);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.info .info-wrap .site-map .site-map-item {
+    max-width: 287px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    background: url("../images/lnav_bg02.png") left bottom no-repeat;
+
+}
+
+.info .info-wrap .site-map .site-map-list {
+    width: 100%;
+    max-width: 210px;
+}
+
+.info .info-wrap .site-map .site-map-item h6 {
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--color-light-gray);
+    padding-bottom: 15px;
+}
+
+.info .info-wrap .site-map .site-map-item ul li {
+    font-size: 12px;
+    line-height: 1.7;
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+.info .info-wrap .site-map .site-map-item ul li a {
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    background: url("../images/arrow_h13.png") left center no-repeat;
+    background-size: auto 12px;
+}
+
+.info .info-wrap .site-map .site-map-item ul li a span {
+    position: relative;
+}
+
+.info .info-wrap .site-map .site-map-item ul li a span img {
+    position: absolute;
+    top: 0;
+    right: -13px;
+}
+
 @media (max-width:980px) {
     nav .menu-subject-open {
         display: none;
     }
 
     header {
-        height: 50vw;
+        height: 80vw;
         position: relative;
         padding: 0;
     }
@@ -367,10 +569,16 @@ header .menu ul li:hover a::after {
 
     .info .inner::before {
         border-top: 3px solid var(--color-red);
+        max-width: 150px;
     }
 
     .info .top-cpath {
         display: none;
+    }
+
+    .info .info-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .info .info-wrap .info-list {
@@ -388,12 +596,16 @@ header .menu ul li:hover a::after {
     }
 
     .info .info-wrap .info-list .info-page-menu {
-        padding: 50px;
+        padding: 30px;
     }
 
     .info .info-wrap .info-list .info-page-menu ul {
         flex-direction: column;
         row-gap: 30px;
+    }
+
+    .info .info-wrap .info-list .info-page-menu ul li {
+        width: auto;
     }
 
     .info .info-wrap .info-list .info-list-item .list-item-title {
@@ -412,7 +624,59 @@ header .menu ul li:hover a::after {
         padding: 15px 0 20px
     }
 
+    .info .info-wrap .info-list .news-content div>h3 span {
+        font-size: 15px;
+    }
+
+    .info .info-wrap .info-list .news-notice .news-notice-date p {
+        font-size: 11px;
+    }
+
+    .info .info-wrap .info-list .news-notice .news-notice-date span {
+        font-size: 11px;
+        padding: 5px 0;
+    }
+
+    .info .info-wrap .info-list .news-notice .news-notice-title p {
+        font-size: 13px;
+    }
+
+    .info .info-wrap .info-list .info-list-item .list-item-title-sub p {
+        font-size: 13px;
+    }
+
+    .info .info-wrap .info-list .info-list-item ul li a {
+        font-size: 12px;
+    }
+
+    .info .info-wrap .info-list .info-list-item .info-img-description .info-img-text h6 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .info .info-wrap .info-list .info-list-item .info-img-description .info-img-text p {
+        text-align: center;
+    }
+
+    .info .info-wrap .info-list .info-list-item .info-img-description .info-img-title h5 {
+        text-align: center;
+    }
+
     .info .info-wrap .visitor-menu {
+        padding-top: 40px;
+        max-width: 500px;
+    }
+
+    .info .info-wrap .site-map .site-map-wrap {
         display: none;
     }
+
+    .info .info-wrap .site-map .site-map-list {
+        max-width: 100%;
+    }
+
+    .info .info-wrap .site-map .site-map-item {
+        max-width: 100%;
+    }
+
 }

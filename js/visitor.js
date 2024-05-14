@@ -12,3 +12,17 @@ $(".info-page-menu li").each(function (index) {
     });
   });
 });
+
+let clickable = true;
+
+$(".site-map-title").click(function () {
+  if (!clickable) return;
+
+  clickable = false;
+
+  $(this)
+    .siblings(".site-map-wrap")
+    .slideToggle("slow", function () {
+      clickable = true;
+    });
+});
