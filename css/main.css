@@ -29,43 +29,10 @@ header .header-bg img.active {
 }
 
 header .menu {
-    width: 100%;
     position: absolute;
     left: 0;
     bottom: 40px;
     padding: 0 40px;
-}
-
-header .menu ul {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(255, 255, 255, .8);
-}
-
-header .menu ul li {
-    height: 100px;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .25s;
-}
-
-header .menu ul a::after {
-    display: block;
-    content: '';
-    border-bottom: solid 1px var(--color-red);
-    transform: scaleX(0);
-    transition: transform .25s ease-in-out;
-    padding-top: 5px;
-}
-
-header .menu ul li:hover {
-    color: var(--color-red);
-}
-
-header .menu ul li:hover a::after {
-    transform: scaleX(1);
 }
 
 .banner {
