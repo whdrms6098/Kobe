@@ -1,0 +1,166 @@
+.info .info-wrap {
+    width: 100%;
+    max-width: 1150px;
+    display: flex;
+    margin: 0 auto;
+    padding: 75px 0 100px;
+    gap: 50px 35px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.info-banner {
+    width: 100%;
+    max-width: 360px;
+}
+
+.info-banner .info-banner-img {
+    position: relative;
+}
+
+.info-banner .info-banner-img img {
+    width: 100%;
+}
+
+.info-banner .info-banner-img .info-banner-title {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    padding-top: 20px;
+    background-color: var(--color-white);
+}
+
+.info-banner .info-banner-img .info-banner-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    border: 2px solid var(--color-red);
+}
+
+.info-banner .info-banner-img .info-banner-title h3 {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info-banner .info-menu {
+    padding-top: 20px;
+}
+
+.info-banner .info-menu ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.info-banner .info-menu ul li {
+    min-width: 160px;
+    transition: .2s;
+}
+
+.info-banner .info-menu ul li:hover {
+    color: var(--color-red);
+}
+
+.info-banner .info-menu ul li:hover span {
+    border-color: var(--color-red)
+}
+
+.info-banner .info-menu ul li a {
+    font-size: 14px;
+    padding: 12px;
+    line-height: 1.6;
+    display: block;
+    background: url("../images/arrow_h13.png") left center no-repeat;
+    background-size: auto 12px;
+
+}
+
+.info-banner .info-menu ul li a span {
+    border-bottom: 1px dotted var(--color-gray);
+}
+
+.info-course .info-course-wrap {
+    display: flex;
+    column-gap: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.info-course .info-course-title {
+    border-bottom: 1px solid var(--color-black);
+    height: 51px;
+}
+
+.info-course .info-course-title h1 {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.info-course .info-course-title h1 span {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media (max-width:1326px) {
+
+    .info .info-wrap {
+        max-width: 970px;
+    }
+
+    .info-banner {
+        max-width: 300px;
+    }
+
+    .info-course .info-course .info-course-title {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width:1326px) {
+    .info .info-wrap {
+        justify-content: center;
+    }
+
+    .info-course .info-course-wrap {
+        justify-content: center;
+    }
+}
+
+@media (max-width:980px) {
+    .info .info-wrap {
+        flex-direction: column;
+        gap: 25px 0;
+    }
+
+    .info-course .info-course-wrap {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .info-banner {
+        max-width: 360px;
+    }
+
+    .info-course .info-course-title {
+        max-width: 360px;
+        height: 35px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

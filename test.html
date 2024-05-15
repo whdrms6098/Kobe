@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .last {
+
+            opacity: 0;
+            visibility: visible;
+            animation: img 4s 1s forwards;
+        }
+
+        @keyframes img {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./images/mv3-line-1.png" alt="" class="first">
+    <img src="./images/mv3-fix.jpg" alt="" class="last">
+    <div style="height:1000vh"></div>
+</body>
+
+</html>
