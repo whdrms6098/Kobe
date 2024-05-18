@@ -21,13 +21,17 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
 
     <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/visitor.css">
+    <link rel="stylesheet" href="../../css/exam.css">
 
     <script defer src="../../js/common.js"></script>
-    <script defer src="../../js/visitor.js"></script>
+    <script defer src="../../js/exam.js"></script>
 
 </head>
 
@@ -53,43 +57,64 @@
 
     <header>
         <div class="header-bg">
-            <img src="../../images/main01.jpg" alt="Bg" class="active" />
-            <img src="../../images/main02.jpg" alt="Bg" />
-            <img src="../../images/main03.jpg" alt="Bg" />
-            <img src="../../images/main04.jpg" alt="Bg" />
+            <img src="../../images/exam_kv.jpg" alt="Bg" class="active" />
         </div>
 
         <div class="inner">
             <div class="header-title">
-                <h1>Visitor</h1>
-                <p>“訪問者別メニュー”</p>
+                <h1>Examination</h1>
+                <p>“入試情報”</p>
             </div>
 
-            <div class="menu">
+            <div class="exam-menu">
                 <ul>
                     <li>
-                        <a href="/Guide/">大学案内</a>
+                        <a href="">
+                            <svg class="icon" viewBox="0 0 26 26">
+                                <path class="arrowcircle"
+                                    d="M13,1C6.383,1,1,6.383,1,13s5.383,12,12,12s12-5.383,12-12S19.617,1,13,1z"></path>
+                                <line class="arrowline" x1="7" y1="13" x2="18" y2="13"></line>
+                                <polyline class="arrowpolygon" points="14.536,9.464 18.071,13 14.536,16.536 ">
+                                </polyline>
+                            </svg>
+                            入試情報
+                        </a>
                     </li>
                     <li>
-                        <a href="/Course/">学部・大学院</a>
+                        <a href="">
+                            <svg class="icon" viewBox="0 0 26 26">
+                                <path class="arrowcircle"
+                                    d="M13,1C6.383,1,1,6.383,1,13s5.383,12,12,12s12-5.383,12-12S19.617,1,13,1z"></path>
+                                <line class="arrowline" x1="7" y1="13" x2="18" y2="13"></line>
+                                <polyline class="arrowpolygon" points="14.536,9.464 18.071,13 14.536,16.536 ">
+                                </polyline>
+                            </svg>
+                            OPEN CAMPUS
+                        </a>
                     </li>
                     <li>
-                        <a href="/Exam/">入試情報</a>
+                        <a href="">
+                            <svg class="icon" viewBox="0 0 26 26">
+                                <path class="arrowcircle"
+                                    d="M13,1C6.383,1,1,6.383,1,13s5.383,12,12,12s12-5.383,12-12S19.617,1,13,1z"></path>
+                                <line class="arrowline" x1="7" y1="13" x2="18" y2="13"></line>
+                                <polyline class="arrowpolygon" points="14.536,9.464 18.071,13 14.536,16.536 ">
+                                </polyline>
+                            </svg>
+                            進学相談会
+                        </a>
                     </li>
                     <li>
-                        <a href="/Career/">キャリア・教職</a>
-                    </li>
-                    <li>
-                        <a href="/International/">国際交流</a>
-                    </li>
-                    <li>
-                        <a href="/CampusLife/">学生生活</a>
-                    </li>
-                    <li>
-                        <a href="/Guide/Outline/">図書館</a>
-                    </li>
-                    <li>
-                        <a href="/Community/">地域連携</a>
+                        <a href="">
+                            <svg class="icon" viewBox="0 0 26 26">
+                                <path class="arrowcircle"
+                                    d="M13,1C6.383,1,1,6.383,1,13s5.383,12,12,12s12-5.383,12-12S19.617,1,13,1z"></path>
+                                <line class="arrowline" x1="7" y1="13" x2="18" y2="13"></line>
+                                <polyline class="arrowpolygon" points="14.536,9.464 18.071,13 14.536,16.536 ">
+                                </polyline>
+                            </svg>
+                            入学金免除制度
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -99,430 +124,471 @@
     <main>
         <section class="info">
             <div class="inner">
-                <div class="top-cpath">
-                    <ul>
-                        <li>
-                            <a href="../../">トップページ</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">訪問者別メニュー</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">受験生の方</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="info-wrap">
-                    <div class="info-list">
-                        <div class="info-list-title">
-                            <h1>受験生の方</h1>
+                <div class="news-event">
+                    <div class="news-content">
+                        <div>
+                            <h3>
+                                <em class="gradient">News /</em>
+                                <span>入試情報に関するニュース</span>
+                            </h3>
                         </div>
 
-                        <div class="info-page-menu">
-                            <ul>
-                                <li>
-                                    <a href="javascript:void(0)">入試情報</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">大学案内</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">キャリア・教職</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">国際交流</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">地域連携</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">学部・大学院</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">学生生活</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">附属機関・関連団体</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="info-list-item" id="list-item1">
-                            <div class="list-item-title">
-                                <h2>入試情報</h2>
+                        <div class="news-notice-list">
+                            <div class="news-notice">
+                                <div class="news-notice-date">
+                                    <p>2024.04.30</p>
+                                    <span class="gradient">入試広報</span>
+                                </div>
+                                <div class="news-notice-title">
+                                    <p>2025年度総合型選抜（AO入試）情報を公開しました。</p>
+                                </div>
                             </div>
 
-                            <ul>
+                            <div class="news-notice">
+                                <div class="news-notice-date">
+                                    <p>2024.04.26</p>
+                                    <span class="gradient">入試広報</span>
+                                </div>
+                                <div class="news-notice-title">
+                                    <p>2025年度から「入学金免除制度」が導入されます。（ファミリー型・社会人型）</p>
+                                </div>
+                            </div>
+                            <div class="news-notice">
+                                <div class="news-notice-date">
+                                    <p>2024.04.19</p>
+                                    <span class="gradient">入試広報</span>
+                                </div>
+                                <div class="news-notice-title">
+                                    <p>進学相談会（4月〜6月）の日程を更新しました。</p>
+                                </div>
+                            </div>
+                            <div class="news-notice">
+                                <div class="news-notice-date">
+                                    <p>2024.03.29</p>
+                                    <span class="gradient">入試広報</span>
+                                </div>
+                                <div class="news-notice-title">
+                                    <p>シンジョムービーに『「一緒に探そう、これからの先生を。」教育学部コンセプトムービー』を追加しました。</p>
+                                </div>
+                            </div>
+                            <div class="news-notice">
+                                <div class="news-notice-date">
+                                    <p>2024.03.15</p>
+                                    <span class="gradient">入試広報</span>
+                                </div>
+                                <div class="news-notice-title">
+                                    <p>シンジョムービーに「神戸女子大学 オープンキャンパス2024 紹介」『「ダンスサークル コンテンポラリーダンスの全国大会へ」神戸女子大学』を追加しました。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="news-content">
+                        <div>
+                            <h3>
+                                <em class="gradient">Event / </em>
+                                <span>入試情報に関するイベント</span>
+                            </h3>
+                        </div>
+
+                        <div class="news-wrap">
+                            <div class="news-item">
+                                <p>[在学生]</p>
+                                <h5>オープンキャンパス（6月）</h5>
+                                <p>2024.06.16 [Sun.]
+                                </p>
+                                <span>大学・短大 同時開催</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="special">
+            <div class="inner">
+                <div class="special-title">
+                    <h1>
+                        <em class="gradient">Special Feature / </em>
+                        <span>特別企画</span>
+                    </h1>
+                    <div class="swiper-button-next">
+                        <svg class="icon" viewBox="0 0 26 26">
+                            <path class="arrowcircle"
+                                d="M13,1C6.383,1,1,6.383,1,13s5.383,12,12,12s12-5.383,12-12S19.617,1,13,1z"></path>
+                            <line class="arrowline" x1="7" y1="13" x2="18" y2="13"></line>
+                            <polyline class="arrowpolygon" points="14.536,9.464 18.071,13 14.536,16.536 ">
+                            </polyline>
+                        </svg>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <svg class="icon" viewBox="0 0 26 26">
+                            <path class="arrowcircle"
+                                d="M13,25c6.617,0,12-5.383,12-12S19.617,1,13,1S1,6.383,1,13S6.383,25,13,25z"></path>
+                            <line class="arrowline" x1="19" y1="13" x2="8" y2="13"></line>
+                            <polyline class="arrowpolygon" points="11.464,16.536 7.929,13 11.464,9.464 "></polyline>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../../images/bnr_zenin.jpg" alt="BrandBG" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../images/bnr_brand.jpg" alt="BrandBG" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../images/bnr_historical.jpg" alt="BrandBG" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../images/bnr_shiokaze.jpg" alt="BrandBG" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="admission">
+            <div class="admission-bg">
+                <img src="../../images/admission.jpg" alt="admissionBg" />
+            </div>
+
+            <div class="admission-info">
+                <div class="admission-info-title">
+                    <h1>
+                        <em class="gradient">Admission infomation / </em>
+                        <span>入試情報</span>
+                    </h1>
+                </div>
+
+                <div class="admission-info-list">
+                    <ul>
+                        <li class="slide-toggle">
+                            <a href="javascript:void(0)">入試情報Topics
+                                <span class="menu-icon"></span>
+                            </a>
+                            <ul class="slide-menu">
                                 <li>
-                                    <a href="javascript:void(0)">入試情報TOP</a>
+                                    <a href="javascript:void(0)">
+                                        <img src="../../images/arrow_circle_right.png" alt="arrow" />
+                                        入学金免除制度（ファミリー型・社会人型）
+                                    </a>
                                 </li>
+                            </ul>
+                        </li>
+                        <li class="slide-toggle">
+                            <a href="javascript:void(0)">入試ガイド
+                                <span class="menu-icon"></span>
+                            </a>
+                            <ul class="slide-menu">
                                 <li>
-                                    <a href="javascript:void(0)">受験生向けサイト
-                                        <span>
-                                            <img src="../../images/icon_blank.png" alt="blank">
-                                        </span>
+                                    <a href="javascript:void(0)">
+                                        <img src="../../images/arrow_circle_right.png" alt="arrow" />
+                                        総合型選抜（AO入試）ガイド2025 [大学]（PDF）
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">【大学院】入試情報</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【編入】入試情報</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">奨学金制度</a>
+                                    <a href="javascript:void(0)">
+                                        <img src="../../images/arrow_circle_right.png" alt="arrow" />
+                                        総合型選抜・社会人総合型選抜（AO入試）ガイド2025 [短大]（PDF）
+                                    </a>
                                 </li>
                             </ul>
-
-                            <div class="page-top-btn">
-                                <button>
-                                    <img src="../../images/arrow_pt.png" alt="arriw">
-                                    ページトップ
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="info-list-item" id="list-item2">
-                            <div class="list-item-title">
-                                <h2>大学案内</h2>
-                            </div>
-
-                            <div class="list-item-title-sub">
-                                <p>神戸女子大学の組織図や行事がわかります。</p>
-                            </div>
-
-                            <ul>
+                        </li>
+                        <li class="slide-toggle">
+                            <a href="javascript:void(0)">総合型選抜（AO入試）
+                                <span class="menu-icon"></span>
+                            </a>
+                            <ul class="slide-menu">
                                 <li>
-                                    <a href="javascript:void(0)">大学案内TOP</a>
+                                    <a href="javascript:void(0)">
+                                        <img src="../../images/arrow_circle_right.png" alt="arrow" />
+                                        総合型選抜（AO入試）について
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">学長挨拶</a>
+                                    <a href="javascript:void(0)">
+                                        <img src="../../images/arrow_circle_right.png" alt="arrow" />
+                                        総合型選抜（AO入試）[大学]
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">大学組織図</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">イベントカレンダー</a>
+                                    <a href="javascript:void(0)">
+                                        <img src="../../images/arrow_circle_right.png" alt="arrow" />
+                                        総合型選抜・社会人総合型選抜（AO入試）[短大]
+                                    </a>
                                 </li>
                             </ul>
-
-                            <div class="page-top-btn">
-                                <button>
-                                    <img src="../../images/arrow_pt.png" alt="arriw">
-                                    ページトップ
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="info-list-item" id="list-item3">
-                            <div class="list-item-title">
-                                <h2>キャリア・教職</h2>
-                            </div>
-
-                            <div class="list-item-title-sub">
-                                <p>就職や資格・教員免許取得までの支援内容</p>
-                            </div>
-
-                            <ul>
+                        </li>
+                        <li class="slide-toggle">
+                            <a href="javascript:void(0)">大学院・編入学入試・社会人入試
+                                <span class="menu-icon"></span>
+                            </a>
+                            <ul class="slide-menu">
                                 <li>
-                                    <a href="javascript:void(0)">キャリア・教職TOP</a>
+                                    <a href="javascript:void(0)">
+                                        <img src="../../images/arrow_circle_right.png" alt="arrow" />
+                                        大学院入試
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">就職支援</a>
+                                    <a href="javascript:void(0)">
+                                        <img src="../../images/arrow_circle_right.png" alt="arrow" />
+                                        編入学入試
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">教職支援</a>
+                                    <a href="javascript:void(0)">
+                                        <img src="../../images/arrow_circle_right.png" alt="arrow" />
+                                        社会人入試
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">資格支援</a>
+                                    <a href="javascript:void(0)">
+                                        <img src="../../images/arrow_circle_right.png" alt="arrow" />
+                                        研究生・科目等履修生・聴講生
+                                    </a>
                                 </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="../../images/arrow_circle_right.png" alt="arrow" />
+                                        資料請求
+                                    </a>
                                 </li>
                             </ul>
-
-                            <div class="page-top-btn">
-                                <button>
-                                    <img src="../../images/arrow_pt.png" alt="arriw">
-                                    ページトップ
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="info-list-item" id="list-item4">
-                            <div class="list-item-title">
-                                <h2>国際交流</h2>
-                            </div>
-
-                            <div class="list-item-title-sub">
-                                <p>海外での語学研修や留学について国別でご紹介</p>
-                            </div>
-
-                            <ul>
+                        </li>
+                        <li class="slide-toggle">
+                            <a href="javascript:void(0)">入試結果
+                                <span class="menu-icon"></span>
+                            </a>
+                            <ul class="slide-menu">
                                 <li>
-                                    <a href="javascript:void(0)">国際交流TOP</a>
+                                    <a href="javascript:void(0)">
+                                        <img src="../../images/arrow_circle_right.png" alt="arrow" />
+                                        2022年度（PDF）
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">海外提携校</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">交通アクセス</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">サイトマップ</a>
+                                    <a href="javascript:void(0)">
+                                        <img src="../../images/arrow_circle_right.png" alt="arrow" />
+                                        2023年度（PDF）
+                                    </a>
                                 </li>
                             </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-                            <div class="page-top-btn">
-                                <button>
-                                    <img src="../../images/arrow_pt.png" alt="arriw">
-                                    ページトップ
-                                </button>
-                            </div>
+        <section class="event">
+            <div class="event-wrap">
+                <div class="event-title">
+                    <h1 class="gradient">Event</h1>
+                    <p>イベント</p>
+                </div>
+                <div class="event-banner-list">
+                    <div class="event-banner">
+                        <div class="event-banner-img">
+                            <img src="../../images/bnr_opencampus.jpg" alt="OPEN CAMPUS">
                         </div>
 
-                        <div class="info-list-item" id="list-item5">
-                            <div class="list-item-title">
-                                <h2>地域連携</h2>
-                            </div>
-
-                            <div class="list-item-title-sub">
-                                <p>学生・教員が取り組んでいる地域の方と連携した活動</p>
-                            </div>
-
-                            <ul>
-                                <li>
-                                    <a href="javascript:void(0)">地域連携TOP</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">地域貢献活動</a>
-                                </li>
-                            </ul>
-
-                            <div class="page-top-btn">
-                                <button>
-                                    <img src="../../images/arrow_pt.png" alt="arriw">
-                                    ページトップ
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="info-list-item" id="list-item6">
-                            <div class="list-item-title">
-                                <h2>学部・大学院</h2>
-                            </div>
-
-                            <div class="list-item-title-sub">
-                                <p>学部から進学後の専攻科・大学院までご紹介</p>
-                            </div>
-
-                            <ul>
-                                <li>
-                                    <a href="javascript:void(0)">【文学部】日本語日本文学科</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【文学部】英語英米文学科</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【文学部】国際教養学科</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【文学部】史学科</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【文学部】教育学科</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【家政学部】家政学科</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【家政学部】管理栄養士養成課程</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【健康福祉学部】社会福祉学科</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【健康福祉学部】健康スポーツ栄養学科</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【看護学部】看護学科</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【心理学部】心理学科</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【大学院】家政学研究科</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【大学院】文学研究科</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【大学院】健康栄養学研究科</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">【大学院】看護学研究科</a>
-                                </li>
-                            </ul>
-
-                            <div class="page-top-btn">
-                                <button>
-                                    <img src="../../images/arrow_pt.png" alt="arriw">
-                                    ページトップ
-                                </button>
-                            </div>
-
-                        </div>
-
-                        <div class="info-list-item" id="list-item7">
-                            <div class="list-item-title">
-                                <h2>学生生活</h2>
-                            </div>
-
-                            <div class="list-item-title-sub">
-                                <p>大学生活でのイベントは盛りだくさん！</p>
-                            </div>
-
-                            <ul>
-                                <li>
-                                    <a href="javascript:void(0)">学生生活TOP</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">キャンパス・施設紹介</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">神女イベント</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">クラブ活動</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">学生寮・下宿</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">奨学金制度</a>
-                                </li>
-                            </ul>
-
-                            <div class="page-top-btn">
-                                <button>
-                                    <img src="../../images/arrow_pt.png" alt="arriw">
-                                    ページトップ
-                                </button>
-                            </div>
-
-                        </div>
-
-                        <div class="info-list-item" id="list-item8">
-                            <div class="list-item-title">
-                                <h2>学生生活</h2>
-                            </div>
-
-                            <div class="list-item-title-sub">
-                                <p>大学生活でのイベントは盛りだくさん！</p>
-                            </div>
-
-                            <ul>
-                                <li>
-                                    <a href="javascript:void(0)">学生生活TOP</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">キャンパス・施設紹介</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">神女イベント</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">クラブ活動</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">学生寮・下宿</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">奨学金制度</a>
-                                </li>
-                            </ul>
-
-                            <div class="page-top-btn">
-                                <button>
-                                    <img src="../../images/arrow_pt.png" alt="arriw">
-                                    ページトップ
-                                </button>
-                            </div>
-
-                        </div>
-
-                        <div class="info-list-item" id="list-item9">
-                            <div class="list-item-title">
-                                <h2>附属機関・関連団体</h2>
-                            </div>
-
-                            <div class="list-item-title-sub">
-                                <p>多数の支援施設が整っています</p>
-                            </div>
-
-                            <ul>
-                                <li>
-                                    <a href="javascript:void(0)">図書館</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">キャリアサポートセンター</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">教職支援センター</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">学生相談室</a>
-                                </li>
-                            </ul>
-
-                            <div class="page-top-btn">
-                                <button>
-                                    <img src="../../images/arrow_pt.png" alt="arriw">
-                                    ページトップ
-                                </button>
-                            </div>
-
-                        </div>
+                        <a href="javascript:void(0)">
+                            <svg class="icon" viewBox="0 0 26 26">
+                                <path class="arrowcircle"
+                                    d="M13,1C6.383,1,1,6.383,1,13s5.383,12,12,12s12-5.383,12-12S19.617,1,13,1z"></path>
+                                <line class="arrowline" x1="7" y1="13" x2="18" y2="13"></line>
+                                <polyline class="arrowpolygon" points="14.536,9.464 18.071,13 14.536,16.536 ">
+                                </polyline>
+                            </svg>
+                            <span>OPEN CAMPUS</span>
+                        </a>
                     </div>
 
-
-
-                    <div class="visitor-menu">
-                        <div class="visitor-menu-title">
-                            <h3>その他</h3>
+                    <div class="event-banner">
+                        <div class="event-banner-img">
+                            <img src="../../images/bnr_shinrosoudan.jpg" alt="進学相談会">
                         </div>
-                        <div class="visitor-menu-list">
-                            <h5>訪問者別メニュー</h5>
-                            <ul>
-                                <li class="active">
-                                    <a href="../Examinee/">受験生の方</a>
-                                </li>
-                                <li>
-                                    <a href="../Student/">在学生の方</a>
-                                </li>
-                                <li>
-                                    <a href="../Graduated/">卒業生の方</a>
-                                </li>
-                                <li>
-                                    <a href="../Parent/">保護者の方</a>
-                                </li>
-                                <li>
-                                    <a href="../Public/">一般・企業の方</a>
-                                </li>
-                            </ul>
 
-                            <ul>
-                                <li>
-                                    <a href="../Access/">交通アクセス</a>
-                                </li>
-                                <li>
-                                    <a href="../Sitemap/">サイトマップ</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <a href="javascript:void(0)">
+                            <svg class="icon" viewBox="0 0 26 26">
+                                <path class="arrowcircle"
+                                    d="M13,1C6.383,1,1,6.383,1,13s5.383,12,12,12s12-5.383,12-12S19.617,1,13,1z"></path>
+                                <line class="arrowline" x1="7" y1="13" x2="18" y2="13"></line>
+                                <polyline class="arrowpolygon" points="14.536,9.464 18.071,13 14.536,16.536 ">
+                                </polyline>
+                            </svg>
+                            <span>進学相談会</span>
+                        </a>
                     </div>
 
+                    <div class="event-banner">
+                        <div class="event-banner-img">
+                            <img src="../../images/bnr_brand.jpg" alt="受験生応援ページ">
+                        </div>
+
+                        <a href="javascript:void(0)">
+                            <svg class="icon" viewBox="0 0 26 26">
+                                <path class="arrowcircle"
+                                    d="M13,1C6.383,1,1,6.383,1,13s5.383,12,12,12s12-5.383,12-12S19.617,1,13,1z"></path>
+                                <line class="arrowline" x1="7" y1="13" x2="18" y2="13"></line>
+                                <polyline class="arrowpolygon" points="14.536,9.464 18.071,13 14.536,16.536 ">
+                                </polyline>
+                            </svg>
+                            <span>受験生応援ページ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-wrap">
+                <div class="event-title">
+                    <h1 class="gradient">Campus Life</h1>
+                    <p>キャンパスライフ</p>
                 </div>
 
+                <div class="event-banner-list">
+                    <div class="event-banner">
+                        <div class="event-banner-img">
+                            <img src="../../images/bnr_movie.jpg" alt="SHINJO MOVIE">
+                        </div>
+
+                        <a href="javascript:void(0)">
+                            <svg class="icon" viewBox="0 0 26 26">
+                                <path class="arrowcircle"
+                                    d="M13,1C6.383,1,1,6.383,1,13s5.383,12,12,12s12-5.383,12-12S19.617,1,13,1z"></path>
+                                <line class="arrowline" x1="7" y1="13" x2="18" y2="13"></line>
+                                <polyline class="arrowpolygon" points="14.536,9.464 18.071,13 14.536,16.536 ">
+                                </polyline>
+                            </svg>
+                            <span>SHINJO MOVIE</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="inner">
+                <div class="blog-title">
+                    <h1>
+                        <em class="gradient">Shinjo Blog /</em>
+                        <span>シンジョマグ</span>
+                    </h1>
+
+                    <a href="javascript:void(0)">
+                        <svg class="icon" viewBox="0 0 26 26">
+                            <path class="arrowcircle"
+                                d="M13,1C6.383,1,1,6.383,1,13s5.383,12,12,12s12-5.383,12-12S19.617,1,13,1z"></path>
+                            <line class="arrowline" x1="7" y1="13" x2="18" y2="13"></line>
+                            <polyline class="arrowpolygon" points="14.536,9.464 18.071,13 14.536,16.536 ">
+                            </polyline>
+                        </svg>
+                        <span class="gradient">View More</span>
+                    </a>
+                </div>
+
+                <div class="blog-wrap">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="../../images/DSC4095.jpg" alt="banner">
+                        </div>
+
+                        <div class="blog-description">
+                            <div>
+                                <p>2024/03/07</p>
+                                <h6 class="gradient">特集</h6>
+                            </div>
+                            <p>須磨離宮公園に新名所!? 学生による「潮見台休憩所」のリノベーションプロジェクト</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="../../images/IMG_5944.jpg" alt="banner">
+                        </div>
+
+                        <div class="blog-description">
+                            <div>
+                                <p>2024/02/22</p>
+                                <h6 class="gradient">キャンパス</h6>
+                            </div>
+                            <p>「ノートテイカー」として活動する学生を取材してみた。</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="../../images/1Z63907-e1707290090773.jpg" alt="banner">
+                        </div>
+
+                        <div class="blog-description">
+                            <div>
+                                <p>2024/02/14</p>
+                                <h6 class="gradient">キャンパス</h6>
+                            </div>
+                            <p>高校球児の身体作りをサポートする取り組みを徹底取材！</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="../../images/1Z62715.jpg" alt="banner">
+                        </div>
+
+                        <div class="blog-description">
+                            <div>
+                                <p>2024/02/07</p>
+                                <h6 class="gradient">特集</h6>
+                            </div>
+                            <p>飲食模擬店とお客さんが帰ってきた！コスモス祭4年ぶりの有観客開催に密着!!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sns">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <span class="sns-tw"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <span class="sns-ig"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <span class="sns-line"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <span class="sns-yt"></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="javascript:void(0)" class="sns-link">
+                    <span>
+                        <svg class="icon" viewBox="0 0 26 26">
+                            <path class="arrowcircle"
+                                d="M13,1C6.383,1,1,6.383,1,13s5.383,12,12,12s12-5.383,12-12S19.617,1,13,1z"></path>
+                            <line class="arrowline" x1="7" y1="13" x2="18" y2="13"></line>
+                            <polyline class="arrowpolygon" points="14.536,9.464 18.071,13 14.536,16.536 ">
+                            </polyline>
+                        </svg>
+                        <b>学科別公式SNSリストはこちら</b>
+                    </span>
+                </a>
             </div>
         </section>
     </main>
@@ -860,13 +926,9 @@
                                 </span>
                             </a>
                         </li>
-
-
                     </ul>
                 </div>
             </div>
-
-
         </div>
     </div>
 </body>

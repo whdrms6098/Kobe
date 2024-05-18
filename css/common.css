@@ -11,6 +11,7 @@ html {
     --color-light-gray: #D9D9D9;
     --color-light-white: #F7FAF8;
     --color-light-red: #D67B88;
+    --color-gradient: linear-gradient(130deg, #bac4c1, #d2b4ae);
 }
 
 body {
@@ -138,6 +139,13 @@ button {
 .btn_m:hover em {
     color: var(--color-red);
     border-bottom: 1px dotted var(--color-red);
+}
+
+.gradient {
+    background: linear-gradient(130deg, #bac4c1, #d2b4ae);
+    background-clip: text;
+    color: transparent;
+    padding-right: 4px;
 }
 
 nav {
@@ -313,6 +321,7 @@ header .header-title {
     justify-content: center;
     align-items: center;
     background: url("../images/h2_bg02.png") center top no-repeat;
+    margin-bottom: 75px;
 }
 
 header .header-title h1 {
@@ -359,10 +368,6 @@ header .menu ul li:hover {
 
 header .menu ul li:hover a::after {
     transform: scaleX(1);
-}
-
-header .header-title {
-    margin-bottom: 75px;
 }
 
 .info .inner {
@@ -925,7 +930,7 @@ footer .f-logo p {
         height: 80vw;
         position: relative;
         padding: 0;
-        max-height: 500px;
+        max-height: 400px;
     }
 
     header .header-bg {

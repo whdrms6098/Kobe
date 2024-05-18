@@ -56,7 +56,7 @@
 
 .info-banner .info-menu ul {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 20px;
 }
@@ -115,6 +115,68 @@
     font-style: normal;
 }
 
+.dept {
+    padding-bottom: 100px;
+}
+
+.dept .inner {
+    max-width: 1230px;
+}
+
+.dept .dept-title-menu {
+    width: 100%;
+}
+
+.dept .dept-title-menu ul {
+    gap: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dept .dept-title-menu ul li {
+    display: flex;
+}
+
+.dept .dept-title-menu ul li a {
+    width: 225px;
+    color: var(--color-gray);
+    font-size: 18px;
+}
+
+.dept .dept-menu-wrap {
+    max-width: 755px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.dept .dept-menu {
+    width: 100%;
+    max-width: 225px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dept .dept-title {
+    width: 100%;
+    background-color: var(--color-red);
+    padding: 5px;
+}
+
+.dept .dept-title h4 {
+    color: var(--color-white);
+    font-size: 16px;
+}
+
+.dept .dept-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 @media (max-width:1326px) {
 
     .info .info-wrap {
@@ -145,7 +207,8 @@
 @media (max-width:980px) {
     .info .info-wrap {
         flex-direction: column;
-        gap: 25px 0;
+        gap: 60px 0;
+        align-items: center;
     }
 
     .info-course .info-course-wrap {
@@ -154,13 +217,18 @@
     }
 
     .info-banner {
-        max-width: 360px;
+        max-width: 500px;
     }
 
     .info-course .info-course-title {
         max-width: 360px;
-        height: 35px;
+        height: auto;
         margin: 0 auto;
         text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .info-course .info-course-title h1 {
+        word-break: auto-phrase;
     }
 }
