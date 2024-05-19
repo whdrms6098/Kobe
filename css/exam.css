@@ -234,11 +234,11 @@ header .exam-menu ul li:hover .arrowpolygon {
     position: relative;
 }
 
-.special .special-title h1 {
+.special .special-title h2 {
     font-size: 50px;
 }
 
-.special .special-title h1 em {
+.special .special-title h2 em {
     font-style: italic;
 }
 
@@ -883,7 +883,7 @@ header .exam-menu ul li:hover .arrowpolygon {
         min-height: 620px;
     }
 
-    .special .special-title h1 {
+    .special .special-title h2 {
         font-size: 22px;
     }
 
@@ -997,7 +997,7 @@ header .exam-menu ul li:hover .arrowpolygon {
     }
 
     .blog .blog-item .blog-description {
-        max-width: auto;
+        max-width: 100%;
     }
 
     .blog .blog-item {

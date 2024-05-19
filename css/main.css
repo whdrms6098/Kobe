@@ -63,7 +63,7 @@ header .menu {
 }
 
 .banner .swiper-wrapper .swiper-slide:hover {
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 .topics {
