@@ -18,7 +18,7 @@
     background: url("../images/ttl01_bg.png") left bottom repeat-x;
 }
 
-.info .info-wrap .info-list .info-list-title h1 {
+.info .info-wrap .info-list .info-list-title h2 {
     font-size: 30px;
     font-weight: bold;
     padding-bottom: 10px;
@@ -102,17 +102,17 @@
     color: var(--color-red)
 }
 
-.info .info-wrap .info-list .info-list-item ul ol li {
+.info .info-wrap .info-list .info-list-item ol li {
     background: none;
     padding: 10px 0;
     cursor: text;
 }
 
-.info .info-wrap .info-list .info-list-item ul ol li:hover {
+.info .info-wrap .info-list .info-list-item ol li:hover {
     color: inherit
 }
 
-.info .info-wrap .info-list .info-list-item ul ol li span {
+.info .info-wrap .info-list .info-list-item ol li span {
     color: var(--color-red);
     font-size: 16px;
     padding-right: 5px;
@@ -401,7 +401,7 @@
         background-size: auto 6px;
     }
 
-    .info .info-wrap .info-list .info-list-title h1 {
+    .info .info-wrap .info-list .info-list-title h2 {
         font-size: 20px;
         text-align: center;
     }
@@ -457,6 +457,14 @@
     }
 
     .info .info-wrap .info-list .info-list-item ul li a {
+        font-size: 12px;
+    }
+
+    .info .info-wrap .info-list .info-list-item ol li span {
+        font-size: 14px;
+    }
+
+    .info .info-wrap .info-list .info-list-item ol li {
         font-size: 12px;
     }
 

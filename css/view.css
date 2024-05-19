@@ -107,13 +107,13 @@ header .header-title h1 {
     height: 51px;
 }
 
-.info-course .info-course-title h1 {
+.info-course .info-course-title h2 {
     font-size: 20px;
     font-weight: bold;
     font-style: italic;
 }
 
-.info-course .info-course-title h1 span {
+.info-course .info-course-title h2 span {
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
@@ -234,7 +234,7 @@ header .header-title h1 {
         padding-bottom: 15px;
     }
 
-    .info-course .info-course-title h1 {
+    .info-course .info-course-title h2 {
         word-break: auto-phrase;
     }
 }
