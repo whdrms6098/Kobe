@@ -8,6 +8,7 @@
 }
 
 .info .info-wrap .info-list {
+    width: 100%;
     max-width: 780px;
 }
 
@@ -152,6 +153,12 @@
 .info .info-wrap .info-list .info-list-item .info-img-description .info-img-title h5 {
     font-size: 17px;
     font-weight: bold;
+}
+
+.info .info-wrap .info-list .info-list-item .info-img-description .info-img-description-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .info .info-wrap .info-list .info-list-item .info-img-description .info-img-text {

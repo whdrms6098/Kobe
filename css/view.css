@@ -1,3 +1,7 @@
+header .header-title h1 {
+    text-align: center;
+}
+
 .info .info-wrap {
     width: 100%;
     max-width: 1150px;
@@ -130,7 +134,8 @@
 .dept .dept-title-menu ul {
     gap: 40px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .dept .dept-title-menu ul li {
@@ -146,9 +151,10 @@
 .dept .dept-menu-wrap {
     max-width: 755px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .dept .dept-menu {
@@ -230,5 +236,11 @@
 
     .info-course .info-course-title h1 {
         word-break: auto-phrase;
+    }
+}
+
+@media (max-width:500px) {
+    .info .info-wrap {
+        padding-bottom: 75px;
     }
 }

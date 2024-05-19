@@ -409,7 +409,7 @@ header .menu ul li:hover a::after {
     cursor: text;
 }
 
-.info .top-cpath ul li:first-child a {
+.info .top-cpath ul li a.cusor {
     cursor: pointer;
 }
 
