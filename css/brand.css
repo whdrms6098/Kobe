@@ -1,0 +1,178 @@
+body {
+    font-family: "Shippori Mincho B1", serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+section {
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header .inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0;
+    animation: top-show 2s 2.5s forwards;
+    transform: translateY(30px);
+}
+
+header .logo {
+    opacity: 0;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.bg>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg .fix {
+    opacity: 0;
+}
+
+.mv {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.mv .img-box {
+    width: 50vmin;
+    position: absolute;
+    top: 60px;
+    right: 15%;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.mv .img-box img {
+    width: 100%;
+}
+
+.mv .mv-scroller {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    z-index: 0;
+    transform: translateY(70px);
+}
+
+.mv .mv-scroller .mv-scroller-line {
+    background-color: #FFF;
+    width: 1px;
+    height: 70px;
+    position: relative;
+}
+
+.mv .mv-scroller .mv-scroller-line::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: -3px;
+    background-color: #FFF;
+    border-radius: 50%;
+    transition: transform .2s;
+    animation: scroll-ball 2s 5.5s infinite ease-in-out;
+}
+
+.mv .mv-scroller .mv-scroller-text {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 300;
+    writing-mode: vertical-rl;
+}
+
+.mv .mv-change-img {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(195px);
+}
+
+.mv .mv-change-img a {
+    position: relative;
+}
+
+.mv .mv-change-img a::after {
+    color: #FFF;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 18px;
+}
+
+.mv .mv-change-img a:nth-child(1)::after {
+    content: "#01";
+}
+
+.mv .mv-change-img a:nth-child(2)::after {
+    content: "#02";
+}
+
+.mv .mv-change-img a:nth-child(3)::after {
+    content: "#03";
+}
+
+.mv .mv-change-img img {
+    width: 80px;
+}
+
+.mv .mv-change-img a.active img {
+    border: 2px solid #FFF;
+}
+
+.mv .mv-change-img a.active img,
+.mv .mv-change-img a.active::after {
+    cursor: default;
+}
+
+
+@keyframes scroll-ball {
+    to {
+        transform: translateY(62px);
+    }
+}
