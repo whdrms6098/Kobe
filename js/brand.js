@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  $(window).on("beforeunload", function () {
+    $(window).scrollTop(0);
+  });
+
   gsap.registerPlugin(ScrollTrigger);
 
   //로고
@@ -155,11 +159,7 @@ $(document).ready(function () {
         scrub: 2,
       },
     })
-    .fromTo(
-      ".copy-img",
-      { y: 100, opacity: 0, filter: "blur(5px)" },
-      { y: 0, opacity: 1, filter: "blur(0)" }
-    );
+    .fromTo(".copy-img", { y: 100, opacity: 0 }, { y: 0, opacity: 1 });
 
   //document-title
   gsap
@@ -213,11 +213,7 @@ $(document).ready(function () {
         scrub: 2,
       },
     })
-    .fromTo(
-      ".document-img",
-      { y: 100, opacity: 0, filter: "blur(5px)" },
-      { y: 0, opacity: 1, filter: "blur(0)" }
-    );
+    .fromTo(".document-img", { y: 100, opacity: 0 }, { y: 0, opacity: 1 });
 
   //document-message
   $(".document-message h2").each(function (index, element) {
@@ -238,6 +234,7 @@ $(document).ready(function () {
       );
   });
 
+  //web-title
   $(".web-title h1 span").each(function (index, element) {
     gsap
       .timeline({
@@ -256,6 +253,7 @@ $(document).ready(function () {
       );
   });
 
+  //web-title block img
   $(".web-title-block").each(function (index, element) {
     gsap
       .timeline({
@@ -294,6 +292,7 @@ $(document).ready(function () {
       .fromTo(".web-bg-text h6", { y: 100, opacity: 0 }, { y: 0, opacity: 1 });
   });
 
+  //web-title more
   gsap
     .timeline({
       scrollTrigger: {
@@ -305,17 +304,19 @@ $(document).ready(function () {
     })
     .fromTo(".web-title h2", { y: 100, opacity: 0 }, { y: 0, opacity: 1 });
 
+  //web-slider
   gsap
     .timeline({
       scrollTrigger: {
         trigger: ".web-slider",
         start: "top 90%",
-        end: "top 30%",
+        end: "top 40%",
         scrub: 2,
       },
     })
     .fromTo(".web-slider", { y: 100, opacity: 0 }, { y: 0, opacity: 1 });
 
+  //dept-title
   $(".dept-title h1 span").each(function (index, element) {
     gsap
       .timeline({
@@ -334,6 +335,7 @@ $(document).ready(function () {
       );
   });
 
+  //dept-title block img
   $(".dept-title-block").each(function (index, element) {
     gsap
       .timeline({
@@ -352,6 +354,7 @@ $(document).ready(function () {
       );
   });
 
+  //detp-bg-text
   $(".dept-bg-text span").each(function (_, element) {
     gsap
       .timeline({
@@ -371,24 +374,117 @@ $(document).ready(function () {
       .fromTo(".dept-bg-text h6", { y: 100, opacity: 0 }, { y: 0, opacity: 1 });
   });
 
+  //dept-box img
   $(".dept-box-item").each(function (index, element) {
     gsap
       .timeline({
         scrollTrigger: {
-          trigger: ".dept-box-item",
-          start: "top 80%",
-          end: "top top",
-          scrub: 2,
-          markers: true,
+          trigger: $(this),
+          start: "top 100%",
+          end: "top 60%",
+          scrub: 3,
         },
       })
       .fromTo(
         element,
-        { y: 100, opacity: 0, filter: "blur(10px)" },
-        { y: 0, opacity: 1, filter: "blur(0)", duration: 0.1 },
-        index * 0.2
+        { y: 100, opacity: 0 },
+        { y: 0, opacity: 1 },
+        index * 0.1
       );
   });
+
+  //gallery path
+  $(".gallery-box").each(function () {
+    const path = $(this).find(".path")[0];
+    const length = path.getTotalLength();
+
+    path.style.strokeDasharray = length;
+    path.style.strokeDashoffset = length;
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: $(this),
+          start: "top 90%",
+          end: "top 30%",
+          scrub: 2,
+        },
+      })
+      .fromTo(
+        path,
+        { strokeDashoffset: length },
+        { strokeDashoffset: 0, duration: 5, ease: "power1.inOut" }
+      );
+  });
+
+  //gallery-bg-text
+  $(".gallery-bg-text span").each(function (_, element) {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".gallery",
+          start: "top 90%",
+          end: "top 50%",
+          scrub: 2,
+        },
+      })
+      .fromTo(element, { y: 100, opacity: 0 }, { y: 0, opacity: 1 }, 6)
+      .fromTo(
+        ".gallery-bg-text h6",
+        { y: 100, opacity: 0 },
+        { y: 0, opacity: 1 }
+      );
+  });
+
+  //gallery img
+  $(".gallery-box img").each(function (_, element) {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: $(this),
+          start: "top 100%",
+          end: "top 40%",
+          scrub: 2,
+        },
+      })
+      .fromTo(
+        element,
+        { y: 100, opacity: 0, filter: "blur(1px)" },
+        { y: 1, opacity: 1, filter: "blur(0)", duration: 1 },
+        2
+      );
+  });
+
+  //gallery number
+  $(".gallery-box span").each(function (_, element) {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: $(this),
+          start: "top 100%",
+          end: "top 80%",
+          scrub: 2,
+        },
+      })
+      .fromTo(element, { y: 100, opacity: 0 }, { y: 1, opacity: 1 }, 1);
+  });
+
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".gallery",
+        start: "top 70%",
+        end: "top 30%",
+        scrub: 2,
+      },
+    })
+    .fromTo(".gallery-title h2", { y: 100, opacity: 0 }, { y: 0, opacity: 1 })
+    .fromTo(
+      ".gallery-title-block",
+      { y: 100, opacity: 0 },
+      { y: 0, opacity: 1 },
+      1
+    );
 });
 
 new Swiper(".web-slider .swiper-container", {
