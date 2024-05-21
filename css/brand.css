@@ -1,5 +1,6 @@
 body {
-    font-family: "Shippori Mincho B1", serif;
+    font-family:
+        "Shippori Mincho B1", "Shippori Mincho", serif;
 }
 
 a {
@@ -7,10 +8,106 @@ a {
     text-decoration: none;
 }
 
+.blur-background::after {
+    backdrop-filter: blur(7px);
+}
+
 section {
     position: relative;
     z-index: 1;
 }
+
+main {
+    overflow: hidden;
+}
+
+.content-bg-text {
+    position: absolute;
+    top: 13vw;
+    right: -.5vw;
+    z-index: 0;
+}
+
+.content-bg-text p {
+    font-size: 6vw;
+    font-weight: 300;
+    opacity: .3;
+    color: #FFF;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.content-bg-text h6 {
+    font-size: 2vw;
+    color: #4E3433;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-10deg);
+    font-weight: bold;
+}
+
+
+.content-title h1 {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    font-size: 4vw;
+    letter-spacing: .2vw;
+    color: #FFF;
+    gap: 4vw;
+    z-index: 1;
+}
+
+.content-title h1 span {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: relative;
+}
+
+.content-title h1 span::after {
+    content: "";
+    width: 1px;
+    height: 28vw;
+    background-color: #FFF;
+    position: absolute;
+    left: 6vw;
+    top: 0;
+}
+
+.content-title h1 span::before {
+    content: "";
+    width: 1px;
+    height: 28vw;
+    background-color: #FFF;
+    position: absolute;
+    right: 14vw;
+    top: 0px;
+}
+
+.content-title h1 span:last-child::before {
+    content: none;
+}
+
+.content-title h1 span:last-child::after {
+    left: 6vw;
+}
+
+.content-title .content-title-block {
+    position: absolute;
+    right: -5vw;
+    top: -4vw;
+    z-index: 0;
+}
+
+.content-title .content-title-block:nth-child(2) {
+    top: auto;
+    right: auto;
+    left: -4vw;
+    bottom: 8vw;
+}
+
 
 header {
     width: 100%;
@@ -36,7 +133,6 @@ header img {
 header p {
     font-size: 16px;
     opacity: 0;
-    animation: top-show 2s 2.5s forwards;
     transform: translateY(30px);
 }
 
@@ -64,6 +160,17 @@ header .logo {
 
 .bg .fix {
     opacity: 0;
+    filter: brightness(1);
+}
+
+.bg::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 1s;
 }
 
 .mv {
@@ -170,6 +277,292 @@ header .logo {
     cursor: default;
 }
 
+.copy {
+    position: relative;
+    z-index: 1;
+    padding-top: 40vw;
+    display: flex;
+    justify-content: center;
+}
+
+.copy .inner {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.copy .copy-text {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.copy .copy-text span {
+    font-size: 1.5vw;
+    color: #FFF;
+    writing-mode: vertical-rl;
+    padding: 0 1.5vw;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.copy .copy-text span:first-child {
+    position: relative;
+}
+
+.copy .copy-text img {
+    width: 10vw;
+    position: absolute;
+    top: -2vw;
+    right: -5vw;
+}
+
+.copy .copy-img {
+    width: 24vw;
+    height: 35vw;
+    transform: rotate(-16.0002deg) skew(-16.0002deg, 0deg) scale(1.0403, 0.96126);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, .17);
+    overflow: hidden;
+    margin-top: 8vw;
+    opacity: 0;
+    filter: blur(5px);
+}
+
+.copy .copy-img .copy-img-box {
+    width: 25vw;
+    transform: translate(0px, -100px) rotate(16.0002deg) skew(16.0002deg, 0deg) scale(1.0403, 0.96126);
+}
+
+.copy .copy-img img {
+    width: 100%;
+
+}
+
+.document {
+    padding-top: 25vw;
+    position: relative;
+    z-index: 1;
+}
+
+.document .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.document-title {
+    position: relative;
+}
+
+.document-title h2 {
+    color: #FFF;
+    writing-mode: vertical-rl;
+    font-size: 4vw;
+    position: relative;
+    z-index: 1;
+}
+
+.document-title h2::after {
+    content: "";
+    width: 1px;
+    height: 18vw;
+    background-color: #FFF;
+    position: absolute;
+    left: 7vw;
+    top: 0;
+}
+
+.document-title h2::before {
+    content: "";
+    width: 1px;
+    height: 18vw;
+    background-color: #FFF;
+    position: absolute;
+    right: 7vw;
+    top: 25px;
+}
+
+.document-title span {
+    width: 7vw;
+    position: absolute;
+    right: -5vw;
+    top: -60px;
+    z-index: 0;
+}
+
+.document-title span img {
+    width: 100%;
+}
+
+.document-img {
+    width: 35vw;
+    transition: filter 1s;
+    position: relative;
+}
+
+.document-img img {
+    width: 100%;
+}
+
+.document-img:hover {
+    filter: brightness(.8);
+}
+
+.document-img::before {
+    content: "大学案内を無料でプレゼント";
+    width: 100%;
+    padding: .7vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #A96270;
+    color: #FFF;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.document-message {
+    position: absolute;
+    bottom: 0;
+    left: 10vw;
+}
+
+.document-message h2 {
+    font-size: 1.5vw;
+    color: #FFF;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.web {
+    margin-top: 15vw;
+}
+
+.web .inner {
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 100px;
+    align-items: flex-end;
+}
+
+.web-title {
+    position: relative;
+}
+
+.web .web-title a {
+    color: #FFF;
+    font-size: 3vw;
+    text-align: center;
+    font-weight: bold;
+    padding: 1vw 0;
+    display: block;
+}
+
+.web .content-bg-text {
+    top: -2vw;
+}
+
+.web .content-bg-text h6 {
+    left: 10%;
+}
+
+.web .web-slider {
+    max-width: 80%;
+    margin-left: 10vw;
+}
+
+.web .web-slider .swiper-slide {
+    width: 30vw;
+    cursor: pointer;
+}
+
+.web .web-slider .swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+    transition: filter .2s;
+}
+
+.web .web-slider .swiper-slide:hover img {
+    filter: brightness(.6);
+}
+
+.web .web-slider .slide-item-status {
+    padding-top: 1vw;
+}
+
+.web .web-slider .slide-item-status p {
+    font-size: 1vw;
+    color: #FFF;
+    position: relative;
+}
+
+.web .web-slider .silde-item-title {
+    padding-top: 1vw;
+}
+
+.web .web-slider .silde-item-title h3 {
+    color: #FFF;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.dept {
+    margin-top: 15vw;
+}
+
+.dept .inner {
+    position: relative;
+}
+
+.dept-bg-text {
+    position: absolute;
+    left: 0;
+    top: -2vw;
+}
+
+.dept-bg-text p {
+    display: inline;
+}
+
+.dept-bg-text h6 {
+    top: 20%;
+    left: 20%;
+    z-index: 0;
+}
+
+.dept .dept-box {
+    width: 60%;
+    margin-left: 7vw;
+    padding-top: 5vw;
+}
+
+.dept .dept-box-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2vw;
+}
+
+.dept .dept-box-list .dept-box-item {
+    width: 18vw;
+}
+
+.dept .dept-box-list .dept-box-item img {
+    width: 100%;
+}
+
+.dept .box-margin {
+    margin-top: 3vw;
+}
+
+.dept .content-title {
+    position: absolute;
+    right: 8vw;
+    top: 0;
+}
 
 @keyframes scroll-ball {
     to {
