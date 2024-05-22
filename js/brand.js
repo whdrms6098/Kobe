@@ -6,24 +6,24 @@ $(document).ready(function () {
   gsap.registerPlugin(ScrollTrigger);
 
   //로고
-  gsap.to($(".logo"), {
+  gsap.to(".logo", {
     opacity: 1,
     duration: 1,
     delay: 2,
   });
 
   //로고 텍스트
-  gsap.to($("header p"), {
+  gsap.to("header p", {
     opacity: 1,
     duration: 2,
-    delay: 2.5,
+    delay: 2,
     y: 0,
   });
 
   //배경이미지
-  gsap.to($(".fix"), {
+  gsap.to(".bg-fix", {
     opacity: 1,
-    duration: 4,
+    duration: 3,
     delay: 1,
   });
 
@@ -32,14 +32,14 @@ $(document).ready(function () {
     start: "bottom 80%",
     end: "bottom 30%",
     onEnter: function () {
-      gsap.to($(".fix"), {
+      gsap.to(".bg-fix", {
         filter: "brightness(0.5)",
         duration: 1,
       });
       $(".bg").addClass("blur-background");
     },
     onLeaveBack: function () {
-      gsap.to($(".fix"), {
+      gsap.to(".bg-fix", {
         filter: "brightness(1)",
         duration: 1,
       });
@@ -48,10 +48,10 @@ $(document).ready(function () {
   });
 
   //mv 텍스트
-  gsap.to($(".img-box"), {
+  gsap.to(".img-box", {
     opacity: 1,
     duration: 2,
-    delay: 3,
+    delay: 2.5,
     y: 0,
     ease: "power1.out(2)",
   });
@@ -61,7 +61,7 @@ $(document).ready(function () {
     y: -15,
     duration: 1,
     ease: "power2.inOut",
-    delay: 4.5,
+    delay: 3,
     onComplete: function () {
       gsap.to(".mv-change-img", {
         y: 0,
@@ -98,7 +98,7 @@ $(document).ready(function () {
     y: -15,
     duration: 1,
     ease: "power2.inOut",
-    delay: 4.5, // 4.5초 딜레이
+    delay: 3, // 4.5초 딜레이
     onComplete: function () {
       gsap.to(".mv-change-img", {
         y: 0, // 종료값
@@ -109,7 +109,7 @@ $(document).ready(function () {
   });
 
   ScrollTrigger.create({
-    trigger: ".mv-change-img",
+    trigger: ".mv-scroller",
     start: "top 80%",
     end: "top 30%",
     onEnter: function () {
@@ -375,7 +375,7 @@ $(document).ready(function () {
   });
 
   //dept-box img
-  $(".dept-box-item").each(function (index, element) {
+  $(".dept-box-item").each(function (_, element) {
     gsap
       .timeline({
         scrollTrigger: {
@@ -385,12 +385,7 @@ $(document).ready(function () {
           scrub: 3,
         },
       })
-      .fromTo(
-        element,
-        { y: 100, opacity: 0 },
-        { y: 0, opacity: 1 },
-        index * 0.1
-      );
+      .fromTo(element, { y: 100, opacity: 0 }, { y: 0, opacity: 1 });
   });
 
   //gallery path

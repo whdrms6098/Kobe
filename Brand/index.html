@@ -41,17 +41,19 @@
 <body>
     <header>
         <div class="inner">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="神戸女子大学">
-            </a>
+            <div class="logo">
+                <a href="/">
+                    <img src="../images/logo.png" alt="神戸女子大学">
+                </a>
+            </div>
 
             <p>それぞれの桜咲くまで。進め、私たち。</p>
         </div>
     </header>
 
     <div class="bg">
-        <img src="../images/mv3-line-1.png" alt="Bg">
-        <img src="../images/mv3-fix.jpg" alt="Bg" class="fix">
+        <div class="bg-line"></div>
+        <div class="bg-fix"></div>
     </div>
 
     <main>
@@ -60,7 +62,7 @@
                 <img src="../images/mv3-copy.png" alt="この一年間どこまで行けるか試してみようよ">
             </div>
 
-            <div class="mv-scroller mv-trigger">
+            <div class="mv-scroller">
                 <span class="mv-scroller-line"></span>
                 <span class="mv-scroller-text">
                     SCROLL
@@ -68,15 +70,21 @@
             </div>
 
             <div class="mv-change-img">
-                <a href="javascript:void(0)">
-                    <img src="../images/mv-thumb-1.jpg" alt="Bg">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="../images/mv-thumb-2.jpg" alt="Bg">
-                </a>
-                <a href="javascript:void(0)" class="active">
-                    <img src="../images/mv-thumb-3.jpg" alt="Bg">
-                </a>
+                <div class="mv-change-img-item">
+                    <a href="javascript:void(0)">
+                        <img src="../images/gallery-1.jpg" alt="Bg">
+                    </a>
+                </div>
+                <div class="mv-change-img-item">
+                    <a href="javascript:void(0)">
+                        <img src="../images/gallery-2.jpg" alt="Bg">
+                    </a>
+                </div>
+                <div class="mv-change-img-item active">
+                    <a href="javascript:void(0)">
+                        <img src="../images/gallery-3.jpg" alt="Bg">
+                    </a>
+                </div>
             </div>
         </section>
 
