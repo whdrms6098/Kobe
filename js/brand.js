@@ -235,7 +235,7 @@ $(document).ready(function () {
   });
 
   //web-title
-  $(".web-title h1 span").each(function (index, element) {
+  $(".web-title h2 span").each(function (index, element) {
     gsap
       .timeline({
         scrollTrigger: {
@@ -317,7 +317,7 @@ $(document).ready(function () {
     .fromTo(".web-slider", { y: 100, opacity: 0 }, { y: 0, opacity: 1 });
 
   //dept-title
-  $(".dept-title h1 span").each(function (index, element) {
+  $(".dept-title h2 span").each(function (index, element) {
     gsap
       .timeline({
         scrollTrigger: {
@@ -400,15 +400,15 @@ $(document).ready(function () {
       .timeline({
         scrollTrigger: {
           trigger: $(this),
-          start: "top 90%",
-          end: "top 30%",
+          start: "top 80%",
+          end: "top 40%",
           scrub: 2,
         },
       })
       .fromTo(
         path,
         { strokeDashoffset: length },
-        { strokeDashoffset: 0, duration: 5, ease: "power1.inOut" }
+        { strokeDashoffset: 0, duration: 1, ease: "power1.inOut" }
       );
   });
 

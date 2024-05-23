@@ -49,7 +49,7 @@ main {
 }
 
 
-.content-title h1 {
+.content-title h2 {
     display: flex;
     flex-direction: row-reverse;
     position: relative;
@@ -60,13 +60,13 @@ main {
     z-index: 1;
 }
 
-.content-title h1 span {
+.content-title h2 span {
     writing-mode: vertical-rl;
     text-orientation: upright;
     position: relative;
 }
 
-.content-title h1 span::after {
+.content-title h2 span::after {
     content: "";
     width: 1px;
     height: 28vw;
@@ -76,7 +76,7 @@ main {
     top: -2vw;
 }
 
-.content-title h1 span::before {
+.content-title h2 span::before {
     content: "";
     width: 1px;
     height: 28vw;
@@ -86,11 +86,11 @@ main {
     top: 2vw;
 }
 
-.content-title h1 span:last-child::before {
+.content-title h2 span:last-child::before {
     content: none;
 }
 
-.content-title h1 span:last-child::after {
+.content-title h2 span:last-child::after {
     top: 0;
     left: 6vw;
 }
@@ -411,21 +411,21 @@ header p {
     width: 5vw;
 }
 
-.document-img {
+.document .document-img {
     width: 35vw;
     transition: filter 1s;
     position: relative;
 }
 
-.document-img img {
+.document .document-img img {
     width: 100%;
 }
 
-.document-img:hover {
+.document .document-img:hover {
     filter: brightness(.8);
 }
 
-.document-img::before {
+.document .document-img::before {
     content: "大学案内を無料でプレゼント";
     width: 100%;
     padding: .7vw;
@@ -439,13 +439,13 @@ header p {
     box-sizing: border-box;
 }
 
-.document-message {
+.document .document-message {
     position: absolute;
     bottom: 0;
     left: 10vw;
 }
 
-.document-message h2 {
+.document .document-message h2 {
     font-size: 1.5vw;
     color: #FFF;
     font-weight: 400;
@@ -463,7 +463,7 @@ header p {
     align-items: flex-end;
 }
 
-.web-title {
+.web .web-title {
     position: relative;
 }
 
@@ -532,17 +532,17 @@ header p {
     position: relative;
 }
 
-.dept-bg-text {
+.dept .dept-bg-text {
     position: absolute;
     left: 0;
     top: -2vw;
 }
 
-.dept-bg-text p {
+.dept .dept-bg-text p {
     display: inline;
 }
 
-.dept-bg-text h6 {
+.dept .dept-bg-text h6 {
     top: 20%;
     left: 20%;
     z-index: 0;
@@ -583,26 +583,26 @@ header p {
     margin-top: 20vw;
 }
 
-.gallery-bg-text {
+.gallery .gallery-bg-text {
     top: 0;
     right: auto;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.gallery-title {
+.gallery .gallery-title {
     position: absolute;
     left: 10%;
     top: 10vw;
 }
 
-.gallery-title-block:last-child {
+.gallery .gallery-title-block:last-child {
     top: auto;
     bottom: 0;
     right: 2vw;
 }
 
-.gallery-title-block img {
+.gallery .gallery-title-block img {
     width: 5vw;
 }
 
@@ -611,33 +611,33 @@ header p {
     margin: 0 auto;
 }
 
-.gallery-box-wrap {
+.gallery .gallery-box-wrap {
     padding-top: 5vw;
 }
 
-.gallery-box-wrap .gallery-box {
+.gallery .gallery-box-wrap .gallery-box {
     margin-left: auto;
     width: 50vw;
     position: relative;
     margin-bottom: 10vw;
 }
 
-.gallery-box-wrap .gallery-box:nth-child(2) {
+.gallery .gallery-box-wrap .gallery-box:nth-child(2) {
     margin-right: auto;
     margin-left: 0;
 }
 
-.gallery-box-wrap .gallery-box:nth-child(2) span {
+.gallery .gallery-box-wrap .gallery-box:nth-child(2) span {
     left: auto;
     right: -5vw;
 }
 
-.gallery-box-wrap .gallery-box img {
+.gallery .gallery-box-wrap .gallery-box img {
     width: 100%;
     position: relative;
 }
 
-.gallery-box-wrap .gallery-box svg {
+.gallery .gallery-box-wrap .gallery-box svg {
     width: 100%;
     stroke-width: 2px;
     position: absolute;
@@ -646,11 +646,11 @@ header p {
     z-index: 1;
 }
 
-.gallery-box-wrap .gallery-box g {
+.gallery .gallery-box-wrap .gallery-box g {
     stroke: #FFF;
 }
 
-.gallery-box-wrap .gallery-box span {
+.gallery .gallery-box-wrap .gallery-box span {
     position: absolute;
     left: -5vw;
     bottom: 2.5vw;
@@ -658,7 +658,7 @@ header p {
     font-size: 3vw;
 }
 
-.gallery-box-wrap .gallery-box span b {
+.gallery .gallery-box-wrap .gallery-box span b {
     font-size: 7vw;
     font-weight: bold;
     padding-left: .8vw;
@@ -683,7 +683,7 @@ footer .footer-loop {
     overflow: hidden;
 }
 
-.footer-loop h1 {
+footer .footer-loop h1 {
     color: #FFF;
     opacity: .3;
     font-size: 10vw;
@@ -693,7 +693,7 @@ footer .footer-loop {
     animation: textLoop 40s linear infinite;
 }
 
-.footer-copyright {
+footer .footer-copyright {
     margin-top: 20vw;
     display: flex;
     align-items: center;
@@ -701,11 +701,11 @@ footer .footer-loop {
     gap: 50px;
 }
 
-.footer-copyright img {
+footer .footer-copyright img {
     width: 15vw;
 }
 
-.footer-copyright p {
+footer .footer-copyright p {
     color: #FFF;
     font-size: .9vw;
 }
@@ -741,11 +741,11 @@ footer .footer-loop {
         font-size: 4vw;
     }
 
-    .content-title h1 {
+    .content-title h2 {
         font-size: 9vw;
     }
 
-    .content-title h1 span::before {
+    .content-title h2 span::before {
         content: "";
         width: 1px;
         height: 63vw;
@@ -755,7 +755,7 @@ footer .footer-loop {
         top: 2vw;
     }
 
-    .content-title h1 span::after {
+    .content-title h2 span::after {
         content: "";
         width: 1px;
         height: 63vw;
@@ -765,7 +765,7 @@ footer .footer-loop {
         top: -2vw;
     }
 
-    .content-title h1 span:last-child::after {
+    .content-title h2 span:last-child::after {
         top: 0;
         left: 11vw;
     }
@@ -877,21 +877,21 @@ footer .footer-loop {
         width: 9vw;
     }
 
-    .document-img {
+    .document .document-img {
         width: 80vw;
         padding-top: 14vw;
     }
 
-    .document-img::before {
+    .document .document-img::before {
         font-size: 3vw;
         padding: 15px;
     }
 
-    .document-message {
+    .document .document-message {
         position: static;
     }
 
-    .document-message h2 {
+    .document .document-message h2 {
         font-size: 5.5vw;
     }
 
@@ -974,7 +974,7 @@ footer .footer-loop {
         position: relative;
     }
 
-    .dept .content-title h1 {
+    .dept .content-title h2 {
         margin-right: 11vw;
         margin-top: 7vw;
     }
@@ -1006,11 +1006,11 @@ footer .footer-loop {
         padding: 50vw 0 20vw;
     }
 
-    .gallery-bg-text {
+    .gallery .gallery-bg-text {
         width: 100%;
     }
 
-    .gallery-bg-text h6 {
+    .gallery .gallery-bg-text h6 {
         top: 65%;
         left: 30%;
     }
@@ -1044,11 +1044,11 @@ footer .footer-loop {
         display: none;
     }
 
-    .gallery-box-wrap {
+    .gallery .gallery-box-wrap {
         padding-top: 30vw;
     }
 
-    .gallery-box-wrap .gallery-box {
+    .gallery .gallery-box-wrap .gallery-box {
         width: 78vw;
         margin-bottom: 20vw;
     }
@@ -1059,15 +1059,15 @@ footer .footer-loop {
 
     }
 
-    .footer-copyright {
+    footer .footer-copyright {
         gap: 80px;
     }
 
-    .footer-copyright img {
+    footer .footer-copyright img {
         width: 200px;
     }
 
-    .footer-copyright p {
+    footer .footer-copyright p {
         font-size: 14px;
     }
 }
@@ -1101,11 +1101,11 @@ footer .footer-loop {
         font-size: 4vw;
     }
 
-    .content-title h1 {
+    .content-title h2 {
         font-size: 9vw;
     }
 
-    .content-title h1 span::before {
+    .content-title h2 span::before {
         content: "";
         width: 1px;
         height: 63vw;
@@ -1115,7 +1115,7 @@ footer .footer-loop {
         top: 2vw;
     }
 
-    .content-title h1 span::after {
+    .content-title h2 span::after {
         content: "";
         width: 1px;
         height: 63vw;
@@ -1125,7 +1125,7 @@ footer .footer-loop {
         top: -2vw;
     }
 
-    .content-title h1 span:last-child::after {
+    .content-title h2 span:last-child::after {
         top: 0;
         left: 11vw;
     }
@@ -1334,7 +1334,7 @@ footer .footer-loop {
         position: relative;
     }
 
-    .dept .content-title h1 {
+    .dept .content-title h2 {
         margin-right: 11vw;
         margin-top: 7vw;
     }

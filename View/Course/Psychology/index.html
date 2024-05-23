@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神戸女子大学・神戸女子短期大学ブランドサイト</title>
+
+    <link rel=" icon" href="../../../images/favicon.ico">
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+
+    <link rel="stylesheet" href="../../../css/common.css">
+    <link rel="stylesheet" href="../../../css/psych.css">
+
+    <script defer src="../../../js/common.js"></script>
+    <script defer src="../../../js/psych.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <a href="/">
+            <img src="../../../images/logo.png" alt="神戸女子大学">
+        </a>
+
+        <div class="menu-subject-open">
+            <img src="../../../images/subject-menu.svg" alt="訪問者別メニュー">
+            <p>訪問者別</p>
+        </div>
+
+        <div class="menu-subject-close">
+            <img src="../../../images/menu-close.svg" alt="close">
+        </div>
+
+        <div class="menu-open">
+            <img src="../../../images/btn_menu.png" alt="Menu">
+        </div>
+    </nav>
+
+    <header>
+        <div class="inner">
+            <div class="header-message">
+                <img src="../../../images/mv-txt-lead.svg" alt="なんだ、こころなんだ。">
+            </div>
+
+            <div class="header-person">
+                <img src="../../../images/mv-bg-img.svg" alt="person">
+            </div>
+
+            <div class="header-symbol">
+                <div class="display-pc">
+                    <img src="../../../images/mvbgi22.png" alt="" />
+                    <img src="../../../images/mvbgi18.png" alt="" />
+                    <img src="../../../images/mvbgi03.png" alt="" />
+                    <img src="../../../images/mvbgi17.png" alt="" />
+                    <img src="../../../images/mvbgi15.png" alt="" />
+                    <img src="../../../images/mvbgi19.png" alt="" />
+                    <img src="../../../images/mvbgi20.png" alt="" />
+
+                    <img src="../../../images/mvbgi24.png" alt="" />
+                    <img src="../../../images/mvbgi28.png" alt="" />
+                    <img src="../../../images/mvbgi25.png" alt="" />
+                    <img src="../../../images/mvbgi10.png" alt="" />
+                    <img src="../../../images/mvbgi11.png" alt="" />
+                    <img src="../../../images/mvbgi08.png" alt="" />
+                    <img src="../../../images/mvbgi16.png" alt="" />
+                    <img src="../../../images/mvbgi09.png" alt="" />
+                    <img src="../../../images/mvbgi00.png" alt="" />
+
+                    <img src="../../../images/mvbgi29.png" alt="" />
+                    <img src="../../../images/mvbgi31.png" alt="" />
+                    <img src="../../../images/mvbgi30.png" alt="" />
+                    <img src="../../../images/mvbgi07.png" alt="" />
+                    <img src="../../../images/mvbgi26.png" alt="" />
+                    <img src="../../../images/mvbgi05.png" alt="" />
+                    <img src="../../../images/mvbgi02.png" alt="" />
+                    <img src="../../../images/mvbgi04.png" alt="" />
+                    <img src="../../../images/mvbgi14.png" alt="" />
+                    <img src="../../../images/mvbgi13.png" alt="" />
+
+                    <img src="../../../images/mvbgi12.png" alt="" />
+                    <img src="../../../images/mvbgi27.png" alt="" />
+                </div>
+
+                <!-- <div class="display-sp">
+        <img src="../../../images/mvbgisp07.png" alt=""  id="mvbgisp7" />
+        <img src="../../../images/mvbgisp14.png" alt="" id="mvbgisp14" />
+        <img src="../../../images/mvbgisp13.png" alt=""  id="mvbgisp13" />
+        <img src="../../../images/mvbgisp04.png" alt="" id="mvbgisp4" />
+        <img src="../../../images/mvbgisp09.png" alt=""  id="mvbgisp9" />
+        <img src="../../../images/mvbgisp11.png" alt=""  id="mvbgisp11" />
+        <img src="../../../images/mvbgisp10.png" alt=""  id="mvbgisp10" />
+        <img src="../../../images/mvbgisp06.png" alt=""  id="mvbgisp6" />
+        <img src="../../../images/mvbgisp12.png" alt=""  id="mvbgisp12" />
+        <img src="../../../images/mvbgisp16.png" alt=""  id="mvbgisp16" />
+        <img src="../../../images/mvbgisp05.png" alt=""  id="mvbgisp5" />
+        <img src="../../../images/mvbgisp03.png" alt=""  id="mvbgisp3" />
+        <img src="../../../images/mvbgisp01.png" alt=""  id="mvbgisp1" />
+        <img src="../../../images/mvbgisp17.png" alt=""  id="mvbgisp17" />
+        <img src="../../../images/mvbgisp02.png" alt=""  id="mvbgisp2" />
+        <img src="../../../images/mvbgisp08.png" alt=""  id="mvbgisp8" />
+        <img src="../../../images/mvbgisp00.png" alt="" id="mvbgisp0" />
+        <img src="../../../images/mvbgisp15.png" alt="" " />
+    </div> -->
+            </div>
+
+            <div class="header-description">
+                <img src="../../../images/mv-txt-title.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="lead">
+            <div class="inner">
+                <div class="lead-wrap">
+                    <div class="lead-bg">
+                        <div class="display-pc">
+                            <img src="../../../images/lead-bg-illust-1.svg" alt="symbol">
+                        </div>
+                    </div>
+
+                    <div class="lead-title">
+                        <h2>
+                            こころを知れば、社会が見える。<br>
+                            見える世界が、変わってくる。
+                        </h2>
+                    </div>
+
+                    <div class="lead-description">
+                        <p>心を知ることは、人間をとことん深く知ること<br>
+                            さらに言えば、人間の心が動かす社会の動きを知ることでもあります。<br>
+                            まるで小さな宇宙のような､謎深い心のメカニズムを探究し､<br>
+                            行動との関係性を多角的に実証していく心理学の学び。<br>
+                            何気ない普段のコミュニケーションも、モノが売れるしくみや仕掛けも、<br>
+                            SNSで話題のニュースも、身近なあらゆるモノやコトが、<br>
+                            人の心と密接に関わっていることに、きっとあなたも気づくはずです。<br>
+                            4年間の学びを通して、「臨床心理」「経営・消費者心理」「メディア心理」という<br>
+                            ３つのモデルで科学的な知識と実践的なスキルを身につけ、「心の専門家」として、<br>
+                            教育、医療、地域、メディアなど様々なフィールドで活躍できる人材を目指します。</p>
+                    </div>
+
+                    <div class="lead-message">
+                        <img src="../../../images/lead-message.png" alt="Message">
+                    </div>
+
+                    <div class="lead-message-modal">
+
+                    </div>
+
+                    <div class="lead-logo">
+                        <img src="../../../images/logo.svg" alt="なんだ、こころなんだ。">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="course">
+            <div class="course__0">
+                <div class="course__0-bg">
+                    <img src="../../../images/course-bg-illust00.svg" alt="Symbol">
+                </div>
+
+                <div class="inner">
+                    <div class="en-title">
+                        <h2>COURSE MODEL</h2>
+                    </div>
+
+                    <div class="jp-title">
+                        <h2>心理学の基礎を修得したうえで、<br>
+                            3つのモデルから選択</h2>
+                    </div>
+
+                    <div class="course__0-sub-title">
+                        <p> 心理学の基礎に<br>
+                            関する科目</p>
+                    </div>
+
+                    <div class="course__0-message">
+                        <p>心理学の基本的理論と人間の心理に関するデータを
+                            客観的に分析するスキルを修得します。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course__1">
+                <div class="inner">
+                    <div class="course-bg">
+                        <img src="../../../images/course-bg-img01.svg" alt="Bg">
+                    </div>
+
+                    <div class="course-bg course-bg-symbol">
+                        <img src="../../../images/course-bg-illust01.svg" alt="Bg">
+                    </div>
+
+                    <div class="course-title">
+                        <div class="display-pc">
+                            <img src="../../../images/course-txt-title01.svg" alt="真理を紐解き、心理を探究する。">
+                        </div>
+                    </div>
+
+                    <div class="course-title-wrap">
+                        <div class="course-sub-title">
+                            <svg>
+                                <circle cx="145" cy="145" r="143"></circle>
+                            </svg>
+
+                            <h2>臨床心理<br>
+                                モデル
+                            </h2>
+                        </div>
+
+                        <div class="course-message">
+                            <div class="course-message-title">
+                                <h4>国家資格取得を視野に<br>
+                                    臨床心理の専門家を目指します。</h4>
+                            </div>
+
+                            <div class="course-message-description">
+                                <p>臨床心理の知識を深めていくとともに、<br>
+                                    カウンセリングや心理療法など、心のケアをおこなう<br>
+                                    臨床心理の専門家を目指すためのスキルを修得していきます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course__2">
+                <div class="inner">
+                    <div class="course-bg">
+                        <img src="../../../images/course-bg-img02.svg" alt="Bg">
+                    </div>
+
+                    <div class="course-bg course-bg-symbol">
+                        <img src="../../../images/course-bg-illust02.svg" alt="Bg">
+                    </div>
+
+                    <div class="course-title">
+                        <div class="display-pc">
+                            <img src="../../../images/course-txt-title02.svg" alt="真理を紐解き、心理を探究する。">
+                        </div>
+                    </div>
+
+                    <div class="course-title-wrap">
+                        <div class="course-sub-title">
+                            <svg>
+                                <circle cx="145" cy="145" r="143"></circle>
+                            </svg>
+
+                            <h2>経営・消費者<br>
+                                心理モデル
+                            </h2>
+                        </div>
+
+                        <div class="course-message">
+                            <div class="course-message-title">
+                                <h4>消費者が何を求めているか<br>
+                                    行動や深層心理から探ります。</h4>
+                            </div>
+
+                            <div class="course-message-description">
+                                <p>消費者行動の予測や、商品開発などを学び、<br>
+                                    企業の新たな価値やサービスを生み出すスキルを修得します。<br>
+                                    また、会社内での心と体のケアなど、<br>
+                                    マネジメントについて学ぶことができます。<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course__3">
+                <div class="inner">
+                    <div class="course-bg">
+                        <img src="../../../images/course-bg-img03.svg" alt="Bg">
+                    </div>
+
+                    <div class="course-bg course-bg-symbol">
+                        <img src="../../../images/course-bg-illust03.svg" alt="Bg">
+                    </div>
+
+                    <div class="course-title">
+                        <div class="display-pc">
+                            <img src="../../../images/course-txt-title03.svg" alt="真理を紐解き、心理を探究する。">
+                        </div>
+                    </div>
+
+                    <div class="course-title-wrap">
+                        <div class="course-sub-title">
+                            <svg>
+                                <circle cx="145" cy="145" r="143"></circle>
+                            </svg>
+
+                            <h2>メディア心理<br>
+                                モデル
+                            </h2>
+                        </div>
+
+                        <div class="course-message">
+                            <div class="course-message-title">
+                                <h4>メディアが人の心に <br>
+                                    与える影響を考えます</h4>
+                            </div>
+
+                            <div class="course-message-description">
+                                <p>マスメディアやインターネットからの情報が、<br>
+                                    個人や集団の心理にどのような影響を与えているのかを学びます。<br>
+                                    また、データサイエンスの基礎を習得し、データから社会や人間行動を理解します。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="features-bg">
+                <img src="../../../images/features-bg-illust-1.svg" alt="Symbol">
+                <img src="../../../images/features-bg-illust-2.svg" alt="Symbol">
+            </div>
+
+            <div class="inner">
+
+                <div class="en-title">
+                    <h2>FEATURES</h2>
+                </div>
+
+                <div class="jp-title">
+                    <h2>「神女の心理」ならではの6つの特徴</h2>
+                </div>
+
+                <div class="features-list">
+                    <div class="features-item">
+                        <div class="features-item-messsage">
+                            <div class="features-item-title">
+                                <img src="../../../images/features-num-1.svg" alt="01">
+                                <h2><span>「心理学だけじゃない」</span><br>
+                                    <span>ところに、発見がある。</span>
+                                </h2>
+                            </div>
+
+                            <div class="features-item-description">
+                                <p>人の消費行動について経営と心理の両面から分析したり、メディアによる影響について情報と心理という異なる角度から検証したり、複数の学問の視点をかけあわせて、結びつけながら、新しい発見につなげていく。この「学問のミックス」こそが、シンジョの心理学部の新しいところです。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="features-item-img">
+                            <img src="../../../images/features-illust-1.png" alt="心理学だけじゃない ところに、発見がある">
+                        </div>
+                    </div>
+
+                    <div class="features-item medium">
+                        <div class="features-item-messsage">
+                            <div class="features-item-title">
+                                <img src="../../../images/features-num-2.svg" alt="02">
+                                <h2><span>たった2年で、全員が</span><br>
+                                    <span>「認定心理士」申請資格を取得！</span>
+                                </h2>
+                            </div>
+
+                            <div class="features-item-description">
+                                <p>普通なら4年間をかけて取得する「認定心理士資格」ですが、シンジョの心理学部は2年以内に全員が心理学の基礎的なスキルを修得し、認定心理士の資格科目を履修するカリキュラム。その分、勉強は少しハードですが、あとの2年間はじっくりと専門的な学びや研究に打ち込むことができます。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="features-item-img">
+                            <img src="../../../images/features-illust-2.png" alt="たった2年で、全員が「認定心理士」申請資格を取得！">
+                        </div>
+                    </div>
+
+                    <div class="features-item large">
+                        <div class="features-item-messsage">
+                            <div class="features-item-title">
+                                <img src="../../../images/features-num-3.svg" alt="03">
+                                <h2><span>４年後は「心理×経営×メディア」</span><br>
+                                    <span>のスペシャリストに？！</span>
+                                </h2>
+                            </div>
+
+                            <div class="features-item-description">
+                                <p>2年生前期までに講義科目や実験演習科目で心理学の基礎を固め、2年次後期からは関心に応じて3つのモデルの学びを深めます。3年次の「心理学研究総合演習」では、モデル横断的にチームを組み、それぞれの視点や意見を共有しながら、多角的に社会課題を理解し、解決する力を培います。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="features-item-img">
+                            <img src="../../../images/features-illust-3.png" alt="たった2年で、全員が「認定心理士」申請資格を取得！">
+                        </div>
+                    </div>
+
+                    <div class="features-item medium">
+                        <div class="features-item-messsage">
+                            <div class="features-item-title">
+                                <img src="../../../images/features-num-4.svg" alt="04">
+                                <h2><span>神戸のまちを、</span><br>
+                                    <span>まるごと学びのフィールドに。</span>
+                                </h2>
+                            </div>
+
+                            <div class="features-item-description">
+                                <p>阪神淡路大震災の被災地でもある神戸は、命の尊厳やPTSDをはじめとした心のケアにも関心の高いエリア。この地にキャンパスを置く大学として、地域の人々の心のケア、地域活性につながる企画や地元企業との協働など、神戸の人とまちを知り、心理学のスキルを用いて解決策を考えるPBL学習も実施しています。
+
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="features-item-img">
+                            <img src="../../../images/features-illust-4.png" alt="神戸のまちを、まるごと学びのフィールドに。">
+                        </div>
+                    </div>
+
+                    <div class="features-item medium">
+                        <div class="features-item-messsage">
+                            <div class="features-item-title">
+                                <img src="../../../images/features-num-5.svg" alt="05">
+                                <h2><span>地域とつながり、地域にひらけた</span><br>
+                                    <span>「相談センター」で実習。</span>
+                                </h2>
+                            </div>
+
+                            <div class="features-item-description">
+                                <p>国家資格「公認心理師」の受験資格取得のための「臨床心理相談センター」を、ポートアイランドキャンパス内に新設。資格取得のための実習の場としてだけではなく、心に悩みを抱える地域の皆さんが、いつでも気軽に安心して相談できる、地域にひらけた相談所になることを目指しています。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="features-item-img">
+                            <img src="../../../images/features-illust-5.png" alt="地域とつながり、地域にひらけた「相談センター」で実習。">
+                        </div>
+                    </div>
+
+                    <div class="features-item large">
+                        <div class="features-item-messsage">
+                            <div class="features-item-title">
+                                <img src="../../../images/features-num-6.svg" alt="06">
+                                <h2><span>経営学、経済学、情報学まで、</span><br>
+                                    <span>さまざまなスペシャリストが集結。</span>
+                                </h2>
+                            </div>
+
+                            <div class="features-item-description">
+                                <p>臨床心理、メディア心理、消費者心理、認知心理といった心理学の教員はもちろん、経営学や経済学まで、さまざまな分野を専門とする教員が、シンジョの心理学部には多数在籍しています。ジャンルも多彩だから、学びのフィールドも無限大。ワクワクするような学びのテーマが、きっと見つかるはずです。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="features-item-img">
+                            <img src="../../../images/features-illust-6.png" alt="経営学、経済学、情報学まで、さまざまなスペシャリストが集結。">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="future">
+            <div class="future-bg">
+                <img src="../../../images/admission-bg-illust-1.svg" alt="symbol">
+                <img src="../../../images/admission-bg-illust-3.svg" alt="symbol">
+            </div>
+            <div class="inner">
+                <div class="en-title">
+                    <h2>FUTURE</h2>
+                </div>
+
+                <div class="jp-title">
+                    <h2>心理学部心理学科では次のような人材の養成をめざします</h2>
+                </div>
+
+                <div class="future-list">
+                    <div class="future-item">
+                        <div class="future-item-img">
+                            <div class="future-item-person">
+                                <img src="../../../images/admission-pct-illust01a.png" alt="Person">
+                            </div>
+                            <div class="future-item-plate">
+                                <img src="../../../images/admission-pct-illust01b.png" alt="Plate">
+                            </div>
+                        </div>
+
+                        <div class="future-item-message">
+                            <div class="future-item-title">
+                                <h3>心理学の基礎に<br>
+                                    関する科目</h3>
+                            </div>
+
+                            <div class="future-item-description">
+                                <p>心理学における知覚・言語・認知・ <br>
+                                    人格・社会・臨床などの多様な領域と <br>
+                                    心理学の研究方法についての学びによって、<br>
+                                    人間の心と行動を <br>
+                                    実証的な方法に基づき心理学的に <br>
+                                    理解することができる力を有する人材。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="future-item">
+                        <div class="future-item-img">
+                            <div class="future-item-person">
+                                <img src="../../../images/admission-pct-illust02a.png" alt="Person">
+                            </div>
+                            <div class="future-item-plate">
+                                <img src="../../../images/admission-pct-illust02b.png" alt="Plate">
+                            </div>
+                        </div>
+
+                        <div class="future-item-message pink">
+                            <div class="future-item-title">
+                                <h3>臨床心理</h3>
+                            </div>
+
+                            <div class="future-item-description">
+                                <p>人間における心身の相互的な関連を理解し、<br>
+                                    悩みや葛藤、発達上の課題などを抱えている<br>
+                                    人の心理的援助が行える<br>
+                                    知識と基本的技能を備えた人材。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="future-item">
+                        <div class="future-item-img">
+                            <div class="future-item-person">
+                                <img src="../../../images/admission-pct-illust03a.png" alt="Person">
+                            </div>
+                            <div class="future-item-plate">
+                                <img src="../../../images/admission-pct-illust03b.png" alt="Plate">
+                            </div>
+                        </div>
+
+                        <div class="future-item-message blue">
+                            <div class="future-item-title">
+                                <h3>経営・消費者心理</h3>
+                            </div>
+
+                            <div class="future-item-description">
+                                <p>企業などの組織における<br>
+                                    人間の行動や消費者の行動を<br>
+                                    心理学の視点から理解し、<br>
+                                    その動向を心理学的手続きに基づいて調査し、<br>
+                                    分析することができる人材。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="future-item">
+                        <div class="future-item-img">
+                            <div class="future-item-person">
+                                <img src="../../../images/admission-pct-illust04a.png" alt="Person">
+                            </div>
+                            <div class="future-item-plate">
+                                <img src="../../../images/admission-pct-illust04b.png" alt="Plate">
+                            </div>
+                        </div>
+
+                        <div class="future-item-message orange">
+                            <div class="future-item-title">
+                                <h3>メディア心理</h3>
+                            </div>
+
+                            <div class="future-item-description">
+                                <p>急速に発展するメディアを介した<br>
+                                    情報の交流が、人間の心や行動と<br>
+                                    コミュニケーションのあり方に与える影響を<br>
+                                    心理学の視点から理解できる人材。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="to-top"></div>
+        <div class="inner">
+            <div class="related">
+                <h3>Related Organization / <span>学園案内</span></h3>
+
+                <div class="related-wrap">
+                    <div class="related-banner">
+                        <a href="javascript:void(0)">
+                            <img src="../../../images/ro_bnr01.jpg" alt="学校法人行吉学園">
+                        </a>
+                    </div>
+
+                    <div class="related-banner">
+                        <a href="javascript:void(0)">
+                            <img src="../../../images/ro_bnr02.jpg" alt="神戸女子短期大学">
+                        </a>
+                    </div>
+
+                    <div class="related-banner">
+                        <a href="javascript:void(0)">
+                            <img src="../../../images/ro_bnr03.jpg" alt="神戸女子大学付属高倉台幼稚園">
+                        </a>
+                    </div>
+
+                    <div class="related-banner">
+                        <a href="javascript:void(0)">
+                            <img src="../../../images/ro_bnr04.jpg" alt="社会福祉法人神女きずな会 神女中山手保育園">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="f-content">
+                <div class="campus">
+                    <h3>Campus / <span>キャンパス</span></h3>
+
+                    <div class="campus-title">
+                        <h6>須磨キャンパス</h6>
+                    </div>
+                    <div class="campus-description">
+                        <p>〒654-8585 神戸市須磨区東須磨青山2-1</p>
+                        <p>TEL：078-731-4416</p>
+                    </div>
+
+                    <div class="campus-title">
+                        <h6>ポートアイランドキャンパス</h6>
+                    </div>
+                    <div class="campus-description">
+                        <p>〒650-0046 神戸市中央区港島中町4-7-2</p>
+                        <p>TEL：078-303-4811</p>
+                    </div>
+
+                    <div class="campus-title">
+                        <h6>三宮キャンパス</h6>
+                    </div>
+                    <div class="campus-description">
+                        <p>〒650-0004 神戸市中央区中山手通2-23-1</p>
+                        <p>TEL：078-231-1001</p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <h3>Information / <span>インフォメーション</span></h3>
+                    <div class="f-menu">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">情報公表</a>
+                            </li>
+                            <li>
+                                <a href="/Visitor/Access/">交通アクセス</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">お問い合わせ
+                                    <span>
+                                        <img src="../../../images/icon_blank.png" alt="blank">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">資料請求
+                                    <span>
+                                        <img src="../../../images/icon_blank.png" alt="blank">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/Visitor/Sitemap/">サイトマップ</a>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">サイトポリシー
+                                    <span>
+                                        <img src="../../../images/icon_blank.png" alt="blank">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">個人情報の取り扱い
+                                    <span>
+                                        <img src="../../../images/icon_blank.png" alt="blank">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">個人情報保護への取り組み
+                                    <span>
+                                        <img src="../../../images/icon_blank.png" alt="blank">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">教職員募集
+                                    <span>
+                                        <img src="../../../images/icon_blank.png" alt="blank">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Outline
+                                    <span>
+                                        <img src="../../../images/icon_blank.png" alt="blank">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="search">
+                    <form>
+                        <input type="text">
+                        <input type="submit" value="検索">
+                    </form>
+                    <button class="btn_form">資料請求</button>
+                </div>
+            </div>
+
+            <div class="f-logo">
+                <a href="javascript:void(0)">
+                    <img src="../../../images/logo.png" alt="神戸女子大学">
+                </a>
+                <p>© YUKIYOSHI INSTITUTE.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="side-menu">
+        <div class="side-menu-container">
+
+            <div class="side-menu-close">
+                <button>Close</button>
+            </div>
+
+            <div class="inner">
+                <div class="search">
+                    <form>
+                        <input type="text">
+                        <input type="submit" value="検索">
+                    </form>
+                </div>
+
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="/Visitor/Examinee/">受験生の方</a>
+                        </li>
+                        <li>
+                            <a href="/Visitor/Student/">在学生の方</a>
+                        </li>
+                        <li>
+                            <a href="/Visitor/Graduated/">卒業生の方</a>
+                        </li>
+                        <li>
+                            <a href="/Visitor/Parent/">保護者の方</a>
+                        </li>
+                        <li>
+                            <a href="/Visitor/Public/">一般・企業の方</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                ご支援を<br>
+                                お考えのみなさまへ
+                                <span>
+                                    <img src="../../../images/icon_blank.png" alt="blank">
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="/">
+                                トップページ<br>
+                                <em>Toppage</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/View/Guide/">
+                                大学案内<br>
+                                <em>Outline</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/View/Course/">
+                                学部・大学院<br>
+                                <em>Course</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/View/Exam/">
+                                入試情報<br>
+                                <em>Examination</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">学納金</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="/View/Career/">
+                                キャリア・教職<br>
+                                <em>Career</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/View/International/">
+                                国際交流<br>
+                                <em>International Exchange</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/View/CampusLife/">
+                                学生生活<br>
+                                <em>Campus Life</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/View/Guide/Outline/">
+                                地域連携<br>
+                                <em>Community Cooperation</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/View/Community/">
+                                図書館<br>
+                                <em>Library</em>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="f-menu">
+                    <ul>
+                        <li><a href="javascript:void(0)">Important News</a></li>
+                        <li><a href="javascript:void(0)">News</a></li>
+                        <li><a href="javascript:void(0)">Events</a></li>
+                        <li><a href="javascript:void(0)">情報公表</a></li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                教員・研究情報
+                                <span>
+                                    <img src="../../../images/icon_blank.png" alt="blank">
+                                </span>
+                            </a>
+                        </li>
+                        <li><a href="javascript:void(0)">交通アクセス</a></li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                お問い合わせ
+                                <span>
+                                    <img src="../../../images/icon_blank.png" alt="blank">
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                資料請求
+                                <span>
+                                    <img src="../../../images/icon_blank.png" alt="blank">
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="javascript:void(0)">サイトマップ</a></li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                サイトポリシー
+                                <span>
+                                    <img src="../../../images/icon_blank.png" alt="blank">
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                個人情報の取り扱い
+                                <span>
+                                    <img src="../../../images/icon_blank.png" alt="blank">
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                個人情報保護への取り組み
+                                <span>
+                                    <img src="../../../images/icon_blank.png" alt="blank">
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                教職員募集
+                                <span>
+                                    <img src="../../../images/icon_blank.png" alt="blank">
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                Outline
+                                <span>
+                                    <img src="../../../images/icon_blank.png" alt="blank">
+                                </span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
