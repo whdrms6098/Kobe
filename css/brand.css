@@ -142,9 +142,7 @@ header img {
 header p {
     font-size: 16px;
     opacity: 0;
-    transform: translateY(30px);
 }
-
 
 .bg {
     width: 100%;
@@ -1429,5 +1427,24 @@ footer .footer-copyright p {
 
     .footer-copyright p {
         font-size: 14px;
+    }
+}
+
+@supports (-moz-appearance:none) {
+    .copy .copy-text {
+        width: auto;
+        max-width: 1225px;
+    }
+
+    .content-title .content-title-block:nth-child(2) {
+        left: -3vw;
+    }
+
+    .dept .dept-title .dept-title-block:nth-child(2) {
+        left: -4vw;
+    }
+
+    .document-title span {
+        right: -6vw;
     }
 }

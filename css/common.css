@@ -58,6 +58,7 @@ button {
     left: 50%;
     bottom: 30px;
     transform: translateX(-50%);
+    cursor: pointer;
 }
 
 .more-btn::before {

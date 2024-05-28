@@ -12,28 +12,28 @@ new Swiper(".special .swiper-container", {
 });
 
 $(".slide-toggle > a").click(function () {
-  const $this = $(this);
-  const $slideMenu = $this.siblings(".slide-menu");
+  const anchor = $(this);
+  const slideMenu = anchor.siblings(".slide-menu");
 
-  $(".slide-menu").not($slideMenu).slideUp("slow");
+  $(".slide-menu").not(slideMenu).slideUp("slow");
 
-  $(".slide-toggle").not($this.closest(".slide-toggle")).removeClass("active");
+  $(".slide-toggle").not(anchor.closest(".slide-toggle")).removeClass("active");
   $(".slide-toggle")
-    .not($this.closest(".slide-toggle"))
+    .not(anchor.closest(".slide-toggle"))
     .find(".menu-icon")
     .removeClass("active");
 
-  if ($this.hasClass("disabled")) {
+  if (anchor.hasClass("disabled")) {
     return;
   }
 
-  $this.addClass("disabled");
+  anchor.addClass("disabled");
 
-  $slideMenu.slideToggle(function () {
-    $this.removeClass("disabled");
+  slideMenu.slideToggle(function () {
+    anchor.removeClass("disabled");
   });
 
-  $this.closest(".slide-toggle").toggleClass("active");
+  anchor.closest(".slide-toggle").toggleClass("active");
 
-  $this.find(".menu-icon").toggleClass("active");
+  anchor.find(".menu-icon").toggleClass("active");
 });

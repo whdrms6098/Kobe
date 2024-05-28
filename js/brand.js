@@ -9,21 +9,20 @@ $(document).ready(function () {
   gsap.to(".logo", {
     opacity: 1,
     duration: 1,
-    delay: 2,
+    delay: 1,
   });
 
   //로고 텍스트
   gsap.to("header p", {
     opacity: 1,
     duration: 2,
-    delay: 2,
-    y: 0,
+    delay: 1,
   });
 
   //배경이미지
   gsap.to(".bg-fix", {
     opacity: 1,
-    duration: 3,
+    duration: 2,
     delay: 1,
   });
 
@@ -51,7 +50,7 @@ $(document).ready(function () {
   gsap.to(".img-box", {
     opacity: 1,
     duration: 2,
-    delay: 2.5,
+    delay: 1.5,
     y: 0,
     ease: "power1.out(2)",
   });
@@ -61,7 +60,7 @@ $(document).ready(function () {
     y: -15,
     duration: 1,
     ease: "power2.inOut",
-    delay: 3,
+    delay: 2,
     onComplete: function () {
       gsap.to(".mv-change-img", {
         y: 0,
@@ -98,10 +97,10 @@ $(document).ready(function () {
     y: -15,
     duration: 1,
     ease: "power2.inOut",
-    delay: 3, // 4.5초 딜레이
+    delay: 2,
     onComplete: function () {
       gsap.to(".mv-change-img", {
-        y: 0, // 종료값
+        y: 0,
         duration: 1,
         ease: "power2.inOut",
       });
@@ -115,7 +114,7 @@ $(document).ready(function () {
     onEnter: function () {
       gsap.to(".mv-change-img", {
         y: 195,
-        opacity: 0, // 투명도 설정
+        opacity: 0,
         duration: 1.5,
         ease: "power2.inOut",
       });
@@ -123,7 +122,7 @@ $(document).ready(function () {
     onLeaveBack: function () {
       gsap.to(".mv-change-img", {
         y: 0,
-        opacity: 1, // 투명도 설정
+        opacity: 1,
         duration: 1.5,
         ease: "power2.inOut",
       });
