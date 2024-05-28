@@ -193,6 +193,10 @@ header .header-description img {
     text-align: center;
 }
 
+.lead .lead-message img {
+    cursor: pointer;
+}
+
 .lead .lead-logo {
     width: 100%;
     position: absolute;
@@ -205,7 +209,100 @@ header .header-description img {
     max-width: 200px;
 }
 
-.lead .lead-message-modal {}
+.message-modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(89, 89, 89, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+}
+
+.message-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.message-modal .message-modal-wrap {
+    width: 100%;
+    max-width: 1150px;
+    background-color: var(--color-green);
+    padding: 100px 75px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.message-modal .message-modal-wrap .message-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.message-modal .message-modal-wrap .message-modal-close img {
+    width: 46px;
+}
+
+.message-modal .message-modal-wrap .message-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.message-modal .message-modal-wrap .message-info .message-img img {
+    width: 100%;
+}
+
+.message-modal .message-modal-wrap .message-info .message-info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message-modal .message-modal-wrap .message-info .message-info-text h4 {
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.message-modal .message-modal-wrap .message-info .message-info-text p {
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.message-modal .message-modal-wrap .message-info .message-info-text p span {
+    font-size: 26px;
+    padding-left: 10px;
+}
+
+.message-modal .message-modal-wrap .message-description {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.message-modal .message-modal-wrap .message-description h4 {
+    font-size: 44px;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+.message-modal .message-modal-wrap .message-description p {
+    font-size: 15px;
+    line-height: 2;
+}
 
 .course .inner {
     display: flex;
@@ -235,10 +332,13 @@ header .header-description img {
 }
 
 .en-title {
-    font-size: 44px;
-    font-weight: 300;
     position: relative;
     padding-top: 190px;
+}
+
+.en-title h2 {
+    font-size: 44px;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -922,7 +1022,38 @@ footer {
     }
 }
 
+@media (max-width:1080px) {
+    .message-modal .display-pc {
+        display: none;
+    }
+
+    .message-modal .display-mobile {
+        display: block;
+    }
+
+    .message-modal .message-modal-wrap {
+        width: 90%;
+        height: 90%;
+        justify-content: center;
+        padding: 145px 35px;
+        gap: 60px;
+    }
+
+    .message-modal .message-modal-wrap .message-info {
+        width: 100%;
+        align-items: center;
+    }
+
+    .message-modal .message-modal-wrap .message-description h4 {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 @media (max-width:980px) {
+
     .jp-title {
         padding: 65px 0;
     }
@@ -976,16 +1107,12 @@ footer {
     }
 
     .lead .lead-title h2 {
-        font-size: 5vw;
+        font-size: 30px;
     }
 
     .lead .lead-description p {
-        font-size: 4vw;
-        line-height: 2;
-    }
-
-    .lead .lead-description br {
-        display: none;
+        font-size: 20px;
+        line-height: 2.5;
     }
 
     .lead .lead-message img {
@@ -1012,7 +1139,7 @@ footer {
     }
 
     .course .course__0 .course__0-sub-title::after {
-        animation: none;
+        content: none;
     }
 
     .course .course__0 .course__0-message {
@@ -1133,11 +1260,12 @@ footer {
     }
 
     .features .features-list .features-item .features-item-messsage .features-item-title h2 {
-        font-size: 5vw;
+        font-size: 36px;
     }
 
     .features .features-list .features-item .features-item-messsage .features-item-description p {
-        font-size: 4vw;
+        font-size: 26px;
+        line-height: 2.5;
     }
 
     .future .future-bg {
@@ -1167,11 +1295,11 @@ footer {
     }
 
     .future .future-item .future-item-message .future-item-title h3 {
-        font-size: 5vw;
+        font-size: 38px;
     }
 
     .future .future-item .future-item-message .future-item-description p {
-        font-size: 4vw;
+        font-size: 30px;
     }
 
     .license .license-bg {
@@ -1200,7 +1328,108 @@ footer {
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:580px) {
+    .en-title {
+        padding-top: 130px;
+    }
+
+    .en-title h2 {
+        font-size: 26px;
+    }
+
+    .jp-title h2 {
+        font-size: 22px;
+    }
+
+    .lead .inner {
+        padding: 50px 40px 150px;
+    }
+
+    .lead .lead-wrap {
+        gap: 40px;
+    }
+
+    .lead .lead-title h2 {
+        font-size: 20px;
+    }
+
+    .lead .lead-description p {
+        font-size: 14px;
+    }
+
+    .course .course-title-wrap {
+        padding: 80px 0;
+    }
+
+    .course .course-title-wrap .course-sub-title {
+        width: auto;
+        height: auto;
+    }
+
+    .course .course-title-wrap .course-sub-title svg {
+        width: 290px;
+        height: 290px;
+        transform: scale(.5);
+        top: auto;
+        left: auto;
+    }
+
+    .course .course-title-wrap .course-message .course-message-title h4 {
+        font-size: 18px;
+    }
+
+    .course .course-title-wrap .course-message .course-message-description p {
+        font-size: 16px;
+    }
+
+    .course .course-title-wrap .course-sub-title h2 {
+        font-size: 20px;
+    }
+
+    .features .en-title {
+        padding-top: 45px;
+    }
+
+    .features .features-list .features-item .features-item-messsage .features-item-title h2 {
+        font-size: 16px;
+    }
+
+    .features .features-list .features-item .features-item-messsage .features-item-description p {
+        font-size: 12px;
+    }
+
+    .future .en-title {
+        padding-top: 70px;
+    }
+
+    .future .future-item .future-item-message .future-item-title h3 {
+        font-size: 22px;
+    }
+
+    .future .future-item .future-item-message .future-item-description p {
+        font-size: 18px;
+    }
+
+    .future .future-item .future-item-message .future-item-description br {
+        display: none;
+    }
+
+    .license .en-title {
+        padding-top: 70px;
+    }
+
+    .license .license-wrap .license-list .license-item .license-description p {
+        font-size: 26px;
+    }
+
+    .career {
+        padding-bottom: 150px;
+    }
+
+    .career .en-title {
+        padding-top: 70px;
+    }
+
     .career .career-list .career-item .career-item-title svg {
         display: none;
     }
@@ -1208,8 +1437,8 @@ footer {
     .career .career-list .career-item .career-item-title {
         height: auto;
         border-radius: 50px;
-
     }
+
 
     .career .career-list .career-item.pink .career-item-title {
         border: 3px solid var(--color-pink);
@@ -1245,4 +1474,28 @@ footer {
         top: -75px;
     }
 
+    .message-modal .message-modal-wrap {
+        padding: 120px 35px 30px;
+        gap: 40px;
+    }
+
+    .message-modal .message-modal-wrap .message-description h4 {
+        font-size: 24px;
+    }
+
+    .message-modal .message-modal-wrap .message-info .message-info-text h4 {
+        font-size: 14px;
+    }
+
+    .message-modal .message-modal-wrap .message-info .message-info-text p {
+        font-size: 14px;
+    }
+
+    .message-modal .message-modal-wrap .message-info .message-info-text p span {
+        font-size: 16px;
+    }
+
+    .message-modal .message-modal-wrap .message-description p {
+        font-size: 14px;
+    }
 }
