@@ -270,7 +270,7 @@ $(".career-item").each(function (index, element) {
 
 $(window).click(function () {
   $(".message-modal").removeClass("active");
-  $("body").css("overflow", "auto");
+  $("body").css("overflow-x", "hidden");
 });
 
 $(".lead-message img").click(function (e) {
@@ -282,7 +282,7 @@ $(".lead-message img").click(function (e) {
 $(".message-modal-close").click(function (e) {
   e.stopPropagation();
   $(".message-modal").removeClass("active");
-  $("body").css("overflow", "auto");
+  $("body").css("overflow-x", "auto");
 });
 
 $(".message-modal-wrap").click(function (e) {

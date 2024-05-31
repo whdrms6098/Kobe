@@ -438,6 +438,7 @@ footer {
     background: url("../images/foot_bg.jpg") var(--color-light-white) center bottom no-repeat;
     background-size: 100% auto;
     position: relative;
+    padding-bottom: 20px;
 }
 
 #to-top {

@@ -230,7 +230,7 @@ header p {
     background-color: #FFF;
     border-radius: 50%;
     transition: transform .2s;
-    animation: scroll-ball 2s 5.5s infinite ease-in-out;
+    animation: scroll-ball 2s 2.5s infinite ease-in-out;
 }
 
 .mv .mv-scroller .mv-scroller-text {
@@ -672,11 +672,6 @@ footer {
 footer .footer-loop {
     width: 100%;
     display: flex;
-    overflow: hidden;
-}
-
-footer .footer-loop {
-    display: flex;
     flex: 0 0 auto;
     overflow: hidden;
 }
@@ -716,12 +711,10 @@ footer .footer-copyright p {
 
 @keyframes textLoop {
     0% {
-        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
 
     100% {
-        -webkit-transform: translate3d(-100%, 0, 0);
         transform: translate3d(-100%, 0, 0);
     }
 }
