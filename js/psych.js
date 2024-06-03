@@ -244,28 +244,35 @@ gsap
 
 //career item, svg
 $(".career-item").each(function (index, element) {
-  const path = $(this).find("circle")[0];
-  const length = path.getTotalLength();
+  if (window.innerWidth > 580) {
+    const path = $(this).find("circle")[0];
+    const length = path.getTotalLength();
 
-  path.style.strokeDasharray = length;
-  path.style.strokeDashoffset = length;
+    path.style.strokeDasharray = length;
+    path.style.strokeDashoffset = length;
 
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".career-list",
-        start: "top 60%",
-        end: "top 20%",
-        scrub: 2,
-      },
-    })
-    .fromTo(element, { y: 100, opacity: 0 }, { y: 0, opacity: 1 }, index * 0.4)
-    .fromTo(
-      path,
-      { strokeDashoffset: length },
-      { strokeDashoffset: 0, duration: 1 },
-      index * 0.4
-    );
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".career-list",
+          start: "top 60%",
+          end: "top 20%",
+          scrub: 2,
+        },
+      })
+      .fromTo(
+        element,
+        { y: 100, opacity: 0 },
+        { y: 0, opacity: 1 },
+        index * 0.4
+      )
+      .fromTo(
+        path,
+        { strokeDashoffset: length },
+        { strokeDashoffset: 0, duration: 1 },
+        index * 0.4
+      );
+  }
 });
 
 $(window).click(function () {
